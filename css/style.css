@@ -1,9 +1,9 @@
 /* ---------- VARIABLES ---------- */
 :root {
-  --accent-violet: #6c63ff; 
-  --accent-violet-dark: #594bd6; 
-  --accent-gold: #000; 
-  --bg-violet-soft: #f4f3ff; 
+  --accent-violet: #6c63ff;
+  --accent-violet-dark: #594bd6;
+  --accent-gold: #000;
+  --bg-violet-soft: #f4f3ff;
   --card-bg: #ffffff;
   --muted: #6b7280;
 }
@@ -98,10 +98,7 @@ header .navbar {
   text-align: center;
   margin-bottom: 24px;
   font-weight: 700;
-  color: var(
-    --section-accent,
-    var(--accent-violet)
-  ); 
+  color: var(--section-accent, var(--accent-violet));
   display: inline-block;
   position: relative;
 }
@@ -154,8 +151,7 @@ header .navbar {
 /* Hover zoom + glow */
 .about-image:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 30px rgba(140, 90, 255, 0.7),
-              0 0 60px rgba(140, 90, 255, 0.5);
+  box-shadow: 0 0 30px rgba(140, 90, 255, 0.7), 0 0 60px rgba(140, 90, 255, 0.5);
 }
 
 /* Neon Glow Ring (pseudo element) */
@@ -168,7 +164,7 @@ header .navbar {
   width: 270px;
   height: 270px;
   border-radius: 50%;
-  background: conic-gradient(#6C63FF, #9D8CFF, #6C63FF);
+  background: conic-gradient(#6c63ff, #9d8cff, #6c63ff);
   animation: rotate 6s linear infinite;
   z-index: -1;
   filter: blur(8px);
@@ -192,7 +188,8 @@ header .navbar {
 
 /* Animations */
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-50%) scale(0.95);
     opacity: 0.6;
   }
@@ -203,15 +200,21 @@ header .navbar {
 }
 
 @keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 /* ---------- EDUCATION ---------- */
 #education {
   --section-accent: var(--accent-violet);
-  background: linear-gradient(rgba(108,99,255,0.55), rgba(108,99,255,0.55));
+  background: linear-gradient(
+    rgba(108, 99, 255, 0.55),
+    rgba(108, 99, 255, 0.55)
+  );
 }
 .edu-card {
   background: var(--card-bg);
@@ -265,11 +268,13 @@ header .navbar {
   }
 }
 
-
 /* ---------- PROJECTS ---------- */
 #projects {
   --section-accent: var(--accent-violet);
-  background: linear-gradient(rgba(108,99,255,0.55), rgba(108,99,255,0.55));
+  background: linear-gradient(
+    rgba(108, 99, 255, 0.55),
+    rgba(108, 99, 255, 0.55)
+  );
 }
 .project-card {
   background: var(--card-bg);
@@ -309,7 +314,7 @@ header .navbar {
 }
 .tech-fill {
   height: 100%;
-  background: linear-gradient(90deg, #6C63FF, #4834d4);
+  background: linear-gradient(90deg, #6c63ff, #4834d4);
   border-radius: 6px;
 }
 .tech-percent {
@@ -318,7 +323,6 @@ header .navbar {
   font-size: 0.9rem;
   color: #333;
 }
-
 
 /* ---------- CONTACT ---------- */
 .contact-gradient {
