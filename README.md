@@ -40,16 +40,16 @@ Portfolio-Website/
 📸 Screenshots
 
 ### Homepage 
-![Homepage](assets/preview/home.png)
+![Homepage](preview/home.png)
 
 ### Skills Section
-![Homepage](assets/preview/skills.png)
+![Skills](preview/skills.png)
 
 ### Projects Showcase
-![Homepage](assets/preview/proj.png)
+![Project](preview/proj.png)
 
 ### Contact Section
-![Homepage](assets/preview/contact.png)
+![Contact](preview/contact.png)
 
 🚀 Future Improvements
 
