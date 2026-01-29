@@ -67,6 +67,6 @@ Nishant Gawande
 
 GitHub: @Nishantsg3
 
-Netlify: [(https://portfolionsg.netlify.app/)]
+Netlify: [(https://portfolionsg-web.netlify.app)]
 
 ⭐ If you like this project, don’t forget to star the repo and share it!
