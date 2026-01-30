@@ -1,72 +1,79 @@
-🌐 Personal Portfolio Website
+# 🚀 Nishant Gawande — Portfolio
 
-A modern, responsive portfolio website to showcase my skills, projects, and achievements as an aspiring Full-Stack Java Developer.
-Built with HTML, CSS, JavaScript, and Bootstrap, it serves as both my digital resume and a professional showcase.
+A modern, high-performance personal portfolio showcasing my work as an **Entry-Level Software / Frontend Developer**, focused on clean UI, smooth animations, and real-world projects.
 
-🌍 Live Demo → Portfolio Website
+---
 
-✨ Features
+## ✨ Key Features
 
-✔️ About Me section introducing myself professionally
-✔️ Skills Section with progress bars for technical expertise
-✔️ Projects Showcase with clean layout and visuals
-✔️ Contact Me section with icons & working links
-✔️ Responsive Design – adapts to all screen sizes
-✔️ Fancy profile picture animation for engaging UI
+### Visual Design
+- Animated canvas-based particle system
+- Scroll-based section color transitions
+- Glassmorphism-inspired modern layout
+- Dark / Light mode with theme persistence
 
-🛠️ Tech Stack
+### Engineering Highlights
+- Built using **100% Vanilla JavaScript**
+- Optimized canvas rendering
+- Responsive design across all devices
+- SEO-friendly metadata and structured data
 
-HTML5 → Structure & content
+---
 
-CSS3 → Styling, animations, and responsiveness
+## 📂 Website Sections
 
-JavaScript (ES6) → Interactivity
+- Hero section with animated background
+- About & statistics
+- Tech stack overview
+- Project portfolio
+- Education & certifications
+- Contact section
 
-Bootstrap 5 → Grid system & components
+---
 
-Git & GitHub → Version control
+## 📁 Project Structure
 
-Netlify → Deployment & hosting
+Portfolio/
+├── index.html
+├── css/
+│ └── style.css
+├── js/
+│ └── script.js
+├── img/
+│ └── images and assets
+├── Nishant_Gawande_9421751107.pdf
+└── README.md
 
-📂 Project Structure
+---
 
-Portfolio-Website/
-│── assets/img/ # Images & logos
-│── assets/preview #Images for preview
-│── index.html # Main portfolio page
-│── style.css # Custom styling
-│── script.js # Animations & interactions
+## 🛠️ Technologies Used
 
-📸 Screenshots
+- **HTML5** — Semantic markup, SEO
+- **CSS3** — Animations, glassmorphism, gradients
+- **JavaScript (ES6+)** — Canvas API, observers, localStorage
+- **Bootstrap 5** — Responsive grid and utilities
+- **Font Awesome** — Icons
+- **Google Fonts** — Poppins & Fira Code
 
-### Homepage 
-![Homepage](preview/home.png)
+---
 
-### Skills Section
-![Skills](preview/skills.png)
+## 📱 Browser Support
 
-### Projects Showcase
-![Project](preview/proj.png)
+- Chrome / Edge
+- Firefox
+- Safari
+- Mobile browsers
 
-### Contact Section
-![Contact](preview/contact.png)
+---
 
-🚀 Future Improvements
+## 📫 Contact
 
-🌙 Add Dark/Light Theme Toggle
+**Nishant Gawande**  
+📧 Email: ngawande256@gmail.com  
+💼 LinkedIn: https://linkedin.com/in/nishant-g3  
+🐙 GitHub: https://github.com/Nishantsg3  
 
-📂 Dynamic project cards from JSON/Database
+---
 
-✨ Add animations & transitions for smoother UX
+⭐ If you like this portfolio, feel free to star the repository.
 
-📱 Enhance mobile optimization further
-
-👤 Author
-
-Nishant Gawande
-
-GitHub: @Nishantsg3
-
-Netlify: [(https://portfolionsg-web.netlify.app)]
-
-⭐ If you like this project, don’t forget to star the repo and share it!

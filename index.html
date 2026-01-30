@@ -2,386 +2,529 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nishant Gawande | Portfolio</title>
-  <!-- icon -->
-  <link rel="icon" href="./img/favicon.png" type="image/png" />
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Primary Meta Tags -->
+    <title>Nishant Gawande | Full Stack Java Developer & Software Engineer</title>
+    <meta name="title" content="Nishant Gawande | Full Stack Java Developer & Software Engineer">
+    <meta name="description"
+        content="Full Stack Developer specializing in Java (Spring Boot) and React. Building scalable web applications with modern architectures. Based in Pune, India. Open for opportunities.">
+    <meta name="keywords"
+        content="Full Stack Developer, Java Developer, Spring Boot, React, Software Engineer, Web Development, Pune, India, Portfolio">
+    <meta name="author" content="Nishant Gawande">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nishantgawande.netlify.app/">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nishantgawande.netlify.app/">
+    <meta property="og:title" content="Nishant Gawande | Full Stack Java Developer">
+    <meta property="og:description"
+        content="Full Stack Developer specializing in Java (Spring Boot) and React. Building scalable web applications with modern architectures.">
+    <meta property="og:image" content="https://nishantgawande.netlify.app/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nishantgawande.netlify.app/">
+    <meta property="twitter:title" content="Nishant Gawande | Full Stack Java Developer">
+    <meta property="twitter:description"
+        content="Full Stack Developer specializing in Java (Spring Boot) and React. Building scalable web applications.">
+    <meta property="twitter:image" content="https://nishantgawande.netlify.app/img/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+
+    <!-- Performance Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nishant Gawande",
+      "url": "https://nishantgawande.netlify.app",
+      "jobTitle": "Full Stack Developer",
+      "description": "Full Stack Developer specializing in Java and React",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressCountry": "India"
+      },
+      "email": "ngawande256@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/nishant-gawande-1a2b782bb/",
+        "https://github.com/Nishantsg3",
+        "https://www.instagram.com/im.__nishant/"
+      ]
+    }
+    </script>
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#home">Nishant Gawande</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- GLOBAL PARTICLES (Fixed Background Pattern) -->
+    <div id="global-particles"></div>
 
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i>
-                Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-          </ul>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">&lt;Nishant/&gt;</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
         </div>
-      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><span>&lt;NISHANT/&gt;</span></a>
+
+            <!-- Theme Toggle - Always Visible -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <!-- HERO Section -->
-  <section id="home" class="hero d-flex align-items-center">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- MOT image -->
-        <div class="col-md-6 text-center">
-          <img src="./img/mot.svg" alt="Mot illustration" class="img-fluid hero-image">
-        </div>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-orb"></div>
 
-        <!-- Text -->
-        <div class="col-md-6 text-center text-md-start hero-text">
-          <h1 class="fw-bold">Hello, I'm <span class="highlight">Nishant Santosh Gawande</span></h1>
-          <p class="lead">Aspiring Java Fullstack Web Developer</p>
+        <div class="text-center" style="z-index: 2;">
+            <div class="hero-subtitle">&lt;WELCOME/&gt;</div>
+            <h1 class="hero-title">I am <br><span>Nishant Gawande</span></h1>
 
-          <div class="btn-row">
-            <a class="btn btn-accent me-2" href="#about">Know me <i class="fa-solid fa-address-card ms-1"></i></a>
-            <a class="btn btn-accent me-2" href="#projects">My Work <i class="fa-solid fa-clipboard ms-1"></i></a>
-            <a class="btn btn-accent" href="Nishant_Gawande_ExTC.pdf" download>Resume <i class="fa fa-download ms-1"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT Section -->
-  <section id="about" class="section about" style="--section-accent: var(--accent-violet);">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Text -->
-        <div class="col-md-6 text-center text-md-start">
-          <h2 class="section-title">About Me</h2>
-
-          <p class="about-text">
-            Hi, I'm <strong>Nishant Gawande</strong>, an Electronics and Telecommunication Engineering student
-            aspiring to build my career in the IT industry. I am passionate about <strong>frontend web
-              development</strong>
-            and have been working on projects using <strong>HTML, CSS, JavaScript, Bootstrap, and jQuery</strong>.
-          </p>
-
-          <p class="about-text">
-            I enjoy designing <strong>clean, responsive, and interactive user interfaces</strong> that enhance user
-            experience. At present, I am focused on developing real-world projects to strengthen my
-            <strong>problem-solving skills</strong> and showcase my abilities to potential employers.
-          </p>
-
-          <p class="about-text">
-            I am <strong>highly motivated</strong> to learn, adapt, and contribute to <strong>innovative software
-              solutions</strong>,
-            with the goal of becoming a versatile and impactful developer in the IT field.
-          </p>
-        </div>
-
-        <!-- pfp image -->
-        <div class="col-md-6 text-center">
-          <div class="about-image-wrapper">
-            <img src="./img/bg.jpg" alt="Programmer illustration" class="about-image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION Section -->
-  <section id="education" class="section" style="--section-accent: #fff;">
-    <div class="container text-center">
-      <h2 class="section-title">Education</h2>
-
-      <div class="row justify-content-center mt-4 g-4">
-        <!-- consistent card sizes using d-flex and h-100 -->
-        <!-- B.E. -->
-        <div class="col-md-4 d-flex">
-          <div class="edu-card p-4 w-100 d-flex flex-column justify-content-between">
-            <div>
-              <h5 class="fw-bold">Shri Sant Gajanan Maharaj College of Engineering (SSGMCE), Shegaon</h5>
-              <p class="mb-1">B.E. (Electronics & Telecommunication)</p>
-            </div>
-            <div>
-              <p class="muted mb-1">CGPA: <strong>8.26</strong></p>
-              <p class="muted small">2022 - 2025</p>
-            </div>
-          </div>
-        </div>
-        <!-- Poly -->
-        <div class="col-md-4 d-flex">
-          <div class="edu-card p-4 w-100 d-flex flex-column justify-content-between">
-            <div>
-              <h5 class="fw-bold">Government Polytechnic, Khamgaon</h5>
-              <p class="mb-1">Diploma in Computer Engineering</p>
-            </div>
-            <div>
-              <p class="muted mb-1">Percentage: <strong>81.31%</strong></p>
-              <p class="muted small">2019 - 2022</p>
-            </div>
-          </div>
-        </div>
-        <!-- School -->
-        <div class="col-md-4 d-flex">
-          <div class="edu-card p-4 w-100 d-flex flex-column justify-content-between">
-            <div>
-              <h5 class="fw-bold">J.C. High School, Karanja (Lad)</h5>
-              <p class="mb-1">SSC / 10th</p>
-            </div>
-            <div>
-              <p class="muted mb-1">Percentage: <strong>84.60%</strong></p>
-              <p class="muted small">2019</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS Section -->
-  <section id="skills" class="section" style="--section-accent: #8A63FF;">
-    <div class="container text-center col-lg-4">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-
-        <div class="skill-card html-card">
-          <i class="fa-brands fa-html5 fa-3x"></i>
-          <p><strong>HTML</strong></p>
-        </div>
-
-        <div class="skill-card css-card">
-          <i class="fab fa-css3-alt fa-3x"></i>
-          <p><strong>CSS</strong></p>
-        </div>
-
-        <div class="skill-card js-card">
-          <i class="fab fa-js-square fa-3x"></i>
-          <p><strong>JavaScript</strong></p>
-        </div>
-
-        <div class="skill-card bootstrap-card">
-          <i class="fa-brands fa-bootstrap fa-3x"></i>
-          <p><strong>Bootstrap</strong></p>
-        </div>
-
-        <div class="skill-card java-card">
-          <i class="fa-brands fa-java fa-3x"></i>
-          <p class="skill-name"><strong>Java</strong></p>
-        </div>
-
-        <div class="skill-card sql-card">
-          <i class="fa-solid fa-database fa-3x"></i>
-          <p class="skill-name"><strong>SQL</strong></p>
-        </div>
-
-        <div class="skill-card c-card">
-          <i class="fa-solid fa-code fa-3x"></i>
-          <p class="skill-name"><strong>C / C++</strong></p>
-        </div>
-
-        <div class="skill-card react-card">
-          <i class="fa-brands fa-react fa-3x"></i>
-          <p class="skill-name"><strong>React</strong></p>
-        </div>
-
-        <div class="skill-card git-card">
-          <i class="fab fa-git-alt fa-3x"></i>
-          <p><strong>Git</strong></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- PROJECTS Section -->
-  <section id="projects" class="section bg-light" style="--section-accent: #fff;">
-    <div class="container text-center">
-      <h2 class="section-title">Projects</h2>
-
-      <div class="row g-4 mt-4">
-        <!-- Git Docs -->
-        <div class="col-md-6">
-          <div class="project-card p-4">
-            <img src="./img/project1-logo.png" alt="Git Docs logo" width="60" class="mb-3">
-            <h5><strong>Git Docs</strong></h5>
-            <p>A documentation-style website explaining Git, GitHub, and version control concepts using HTML, CSS, and
-              Bootstrap.</p>
-
-            <div class="tech-list mt-3">
-              <div class="tech-item">
-                <span class="tech-name">HTML</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 95%;"></div>
-                </div>
-                <div class="tech-percent">95%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">CSS</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 90%;"></div>
-                </div>
-                <div class="tech-percent">90%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">JavaScript</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 70%;"></div>
-                </div>
-                <div class="tech-percent">70%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">Bootstrap</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 85%;"></div>
-                </div>
-                <div class="tech-percent">85%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">jQuery</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 40%;"></div>
-                </div>
-                <div class="tech-percent">40%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">Git</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 80%;"></div>
-                </div>
-                <div class="tech-percent">80%</div>
-              </div>
+            <div class="typing-container">
+                <span class="typing-text"></span><span class="cursor">&nbsp;</span>
             </div>
 
-            <div class="mt-3">
-              <a href="https://github.com/Nishantsg3" class="btn btn-accent btn-sm text-white" target="_blank">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
+            <p class="hero-desc">
+                Full Stack Engineer &amp; Software Specialist. <br>
+                Based in Pune, India. Crafting high-performance digital architectures.
+            </p>
+
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="#projects" class="btn-premium">View Work</a>
+                <a href="./Nishant_Gawande_9421751107.pdf" target="_blank" class="btn-glass"><i
+                        class="fas fa-file-alt me-2"></i> Resume</a>
+                <a href="#contact" class="btn-glass">Get In Touch</a>
             </div>
-          </div>
         </div>
+    </section>
 
-        <!-- Quiz Hub -->
-        <div class="col-md-6">
-          <div class="project-card p-4">
-            <img src="./img/project2-logo.png" alt="Quiz Hub logo" width="60" class="mb-3">
-            <h5><strong>Quiz Hub</strong></h5>
-            <p>An interactive quiz application built with HTML, CSS, JavaScript, and jQuery. Designed to test knowledge
-              with a clean UI.</p>
+    <!-- MAIN CONTENT WRAPPER -->
+    <div id="main-content">
+        <canvas id="sections-canvas"></canvas>
 
-            <div class="tech-list mt-3">
-              <div class="tech-item">
-                <span class="tech-name">HTML</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 90%;"></div>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">INTRODUCTION</span>
+                    <h2 class="section-title-lg">Who I Am</h2>
                 </div>
-                <div class="tech-percent">90%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">CSS</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 85%;"></div>
+                <div class="about-wrapper reveal">
+                    <div class="about-img-container">
+                        <div class="about-deco-box"></div>
+                        <img src="./img/bg.jpg" alt="Nishant Gawande - Full Stack Developer" class="about-img"
+                            loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h3>Full Stack Developer &amp; <br> Software Engineer</h3>
+                        <p>
+                            I am an <strong>Electronics and Telecommunication Engineering</strong> student (2025)
+                            transforming deep technical concepts into robust software solutions. My core expertise lies
+                            in <strong>Full Stack Development</strong>, where I architect scalable backends with
+                            <strong>Java (Spring Boot)</strong> and craft intuitive frontends with
+                            <strong>React</strong>.
+                        </p>
+                        <p>
+                            I describe myself as a true <strong>Software Engineer</strong>—passionate not just about
+                            coding, but about system design, algorithmic efficiency, and clean architecture. I am eager
+                            to bring this engineering mindset to a dynamic team.
+                        </p>
+                        <div class="d-flex gap-4 mt-4">
+                            <div class="stat-box">
+                                <h4>6+</h4>
+                                <small>Projects</small>
+                            </div>
+                            <div class="stat-box">
+                                <h4>30+</h4>
+                                <small>Technologies</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tech-percent">85%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">JavaScript</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 80%;"></div>
-                </div>
-                <div class="tech-percent">80%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">Bootstrap</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 70%;"></div>
-                </div>
-                <div class="tech-percent">70%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">jQuery</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 75%;"></div>
-                </div>
-                <div class="tech-percent">75%</div>
-              </div>
-              <div class="tech-item">
-                <span class="tech-name">Git</span>
-                <div class="tech-bar">
-                  <div class="tech-fill" style="width: 65%;"></div>
-                </div>
-                <div class="tech-percent">65%</div>
-              </div>
             </div>
+        </section>
 
-            <div class="mt-3">
-              <a href="https://github.com/Nishantsg3/Quiz-Hub" class="btn btn-accent btn-sm text-white" target="_blank">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section" style="padding-bottom: 60px;">
+            <!-- ... content remains the same, verified structure ... -->
+            <div class="container-fluid p-0">
+                <div class="section-header reveal">
+                    <span class="section-tag">ARSENAL</span>
+                    <h2 class="section-title-lg">Tech Stack</h2>
+                </div>
+                <div class="skills-container reveal">
+                    <!-- Row 1: Core & Languages (Slow Left) -->
+                    <div class="marquee-row slow">
+                        <div class="skill-box"><i class="fa-brands fa-java"></i> <span>Java</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-python"></i> <span>Python</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>SQL</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C++</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-php"></i> <span>PHP</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C#</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-terminal"></i> <span>Bash</span></div>
+                        <!-- Duplicate -->
+                        <div class="skill-box"><i class="fa-brands fa-java"></i> <span>Java</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-python"></i> <span>Python</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>SQL</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C++</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-php"></i> <span>PHP</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C#</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-terminal"></i> <span>Bash</span></div>
+                        <!-- Duplicate -->
+                        <div class="skill-box"><i class="fa-brands fa-java"></i> <span>Java</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-python"></i> <span>Python</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>SQL</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C++</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-php"></i> <span>PHP</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-code"></i> <span>C#</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-terminal"></i> <span>Bash</span></div>
+                    </div>
+                    <!-- Row 2: Frontend & Modern Web (Medium Right) -->
+                    <div class="marquee-row medium">
+                        <div class="skill-box"><i class="fa-brands fa-react"></i> <span>React.js</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-js"></i> <span>JavaScript</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-html5"></i> <span>HTML5</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-css3-alt"></i> <span>CSS3</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-bootstrap"></i> <span>Bootstrap</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-wind"></i> <span>Tailwind</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-layer-group"></i> <span>jQuery</span></div>
+                        <!-- Duplicate -->
+                        <div class="skill-box"><i class="fa-brands fa-react"></i> <span>React.js</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-js"></i> <span>JavaScript</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-html5"></i> <span>HTML5</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-css3-alt"></i> <span>CSS3</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-bootstrap"></i> <span>Bootstrap</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-wind"></i> <span>Tailwind</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-layer-group"></i> <span>jQuery</span></div>
+                        <!-- Duplicate -->
+                        <div class="skill-box"><i class="fa-brands fa-react"></i> <span>React.js</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-js"></i> <span>JavaScript</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-html5"></i> <span>HTML5</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-css3-alt"></i> <span>CSS3</span></div>
+                    </div>
+                    <!-- Row 3: Backend, DB & Tools (Fast Left) -->
+                    <div class="marquee-row fast">
+                        <div class="skill-box"><i class="fa-solid fa-leaf"></i> <span>Spring Boot</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>Hibernate</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-server"></i> <span>JDBC</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-leaf"></i> <span>Spring MVC</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-network-wired"></i> <span>REST API</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>MySQL</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-git-alt"></i> <span>Git</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>PostgreSQL</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-github"></i> <span>GitHub</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-linux"></i> <span>Linux</span></div>
+                        <!-- Duplicate -->
+                        <div class="skill-box"><i class="fa-solid fa-leaf"></i> <span>Spring Boot</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>Hibernate</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-server"></i> <span>JDBC</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-leaf"></i> <span>Spring MVC</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-network-wired"></i> <span>REST API</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>MySQL</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-git-alt"></i> <span>Git</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>PostgreSQL</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-github"></i> <span>GitHub</span></div>
+                        <div class="skill-box"><i class="fa-brands fa-linux"></i> <span>Linux</span></div>
+                        <!-- Duplicate -->
+                        <div class="skill-box"><i class="fa-solid fa-leaf"></i> <span>Spring Boot</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-database"></i> <span>Hibernate</span></div>
+                        <div class="skill-box"><i class="fa-solid fa-leaf"></i> <span>Spring MVC</span></div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-      </div>
-    </div>
-  </section>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">PORTFOLIO</span>
+                    <h2 class="section-title-lg">Featured Work</h2>
+                </div>
 
-  <!-- CONTACT Section -->
-  <section id="contact" class="section contact-gradient" style="--section-accent: var(--accent-violet);">
-    <div class="container text-center">
-      <h2 class="section-title">Contact Me</h2>
+                <!-- Engiplex -->
+                <div class="project-row reveal">
+                    <div class="project-content">
+                        <span class="project-number">01</span>
+                        <h3 class="project-title-lg">Engiplex Solutions</h3>
+                        <p class="project-desc-lg">
+                            Live commercial EdTech platform serving students with courses and internships.
+                            Features a responsive automated enquiry system integrated with Google Sheets API.
+                        </p>
+                        <div class="tech-tag-row">
+                            <span class="tech-tag">HTML5/CSS3</span> <span class="tech-tag">PHP</span> <span
+                                class="tech-tag">Google Sheets API</span> <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://engiplex.in/home/" target="_blank" class="link-btn">Visit Live Site <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                </div>
 
-      <!-- info -->
-      <div class="contact-info mt-4">
-        <p id="txt1"><i class="fas fa-phone me-2"></i> <a href="tel:+919421751107"
-            class="contact-link">+91-9421751107</a></p>
-        <p id="txt2"><i class="fas fa-envelope me-2"></i> <a href="mailto:ngawande256@gmail.com"
-            class="contact-link">ngawande256@gmail.com</a></p>
-        <p id="txt2"><i class="fas fa-map-marker-alt me-2"></i> <span class="contact-text"><strong>Karve Nager,
-              Pune(411052)</strong></span></p>
-      </div>
+                <!-- Symphony -->
+                <div class="project-row reveal">
+                    <div class="project-content">
+                        <span class="project-number">02</span>
+                        <h3 class="project-title-lg">Symphony</h3>
+                        <p class="project-desc-lg">
+                            Immersive web-audio application. Users can play virtual piano, drums, and heavy metal guitar
+                            directly in the browser.
+                            Optimized for low latency audio handling and smooth CSS animations.
+                        </p>
+                        <div class="tech-tag-row">
+                            <span class="tech-tag">JavaScript (ES6)</span> <span class="tech-tag">Web Audio API</span>
+                            <span class="tech-tag">CSS Keyframes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://symphony-mu.netlify.app/" target="_blank" class="link-btn">Play Now <i
+                                    class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                </div>
 
-      <!-- social icons row -->
-      <div class="social-links mt-3">
-        <a href="https://www.linkedin.com/in/nishant-gawande-1a2b782bb/" target="_blank" class="social-icon linkedin"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Nishantsg3" target="_blank" class="social-icon github"><i
-            class="fab fa-github"></i></a>
-        <!-- <a href="https://twitter.com/yourhandle" target="_blank" class="social-icon twitter"><i class="fa-brands fa-x-twitter"></i></a> -->
-        <a href="https://www.instagram.com/im.__nishant/" target="_blank" class="social-icon instagram"><i
-            class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </section>
+                <!-- FinCore -->
+                <div class="project-row reveal">
+                    <div class="project-content">
+                        <span class="project-number">03</span>
+                        <h3 class="project-title-lg">FinCore Banking</h3>
+                        <p class="project-desc-lg">
+                            A robust console-based banking simulation built with Core Java.
+                            Implements secure account creation, transactions, and persistent data storage using MySQL
+                            and JDBC.
+                        </p>
+                        <div class="tech-tag-row">
+                            <span class="tech-tag">Java</span> <span class="tech-tag">JDBC</span> <span
+                                class="tech-tag">MySQL</span> <span class="tech-tag">OOPs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Nishantsg3/java-banking-system" target="_blank"
+                                class="link-btn">View Source <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                </div>
 
-  <!-- FOOTER Section -->
-  <footer class="footer-alt text-center py-3">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 Nishant Gawande. All rights reserved.</p>
-    </div>
-  </footer>
+                <!-- Quiz Hub -->
+                <div class="project-row reveal">
+                    <div class="project-content">
+                        <span class="project-number">04</span>
+                        <h3 class="project-title-lg">Quiz Hub</h3>
+                        <p class="project-desc-lg">
+                            Dynamic interactive quiz application featuring real-time timers, automatic scoring logic,
+                            and responsive question rendering.
+                        </p>
+                        <div class="tech-tag-row">
+                            <span class="tech-tag">JavaScript</span> <span class="tech-tag">jQuery</span> <span
+                                class="tech-tag">DOM Manipulation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://quiz-hub-web.netlify.app/" target="_blank" class="link-btn me-4">Live Demo
+                                <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Nishantsg3/Quiz-Hub" target="_blank" class="link-btn">Repo <i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                </div>
 
-  <!-- Bootstrap JS bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                <div class="text-center mt-5 reveal">
+                    <a href="https://github.com/Nishantsg3" target="_blank" class="btn-glass"
+                        style="width: 100%; max-width: 600px; display: inline-block;">
+                        <i class="fab fa-github me-2"></i> View More Projects on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
 
-  <!-- JS -->
-  <script src="./js/script.js"></script>
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">JOURNEY</span>
+                    <h2 class="section-title-lg">Education Timeline</h2>
+                </div>
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 - 2025</span>
+                            <h3 class="timeline-degree">B.E. (E&TC)</h3>
+                            <p class="timeline-school">SSGMCE, Shegaon</p>
+                            <span class="timeline-score">CGPA: 8.26</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2019 - 2022</span>
+                            <h3 class="timeline-degree">Diploma in Computer Engineering</h3>
+                            <p class="timeline-school">Government Polytechnic, Khamgaon</p>
+                            <span class="timeline-score">Percentage: 81.31%</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2019</span>
+                            <h3 class="timeline-degree">Secondary School (SSC)</h3>
+                            <p class="timeline-school">J.C. High School, Karanja</p>
+                            <span class="timeline-score">Percentage: 84.60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">CREDENTIALS</span>
+                    <h2 class="section-title-lg">Certifications</h2>
+                </div>
+                <div class="cert-grid reveal">
+                    <div class="cert-badge">
+                        <div class="cert-icon-lg"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="cert-title">Introduction to Software Engineering</div>
+                        <div class="cert-issuer">IBM (Coursera)</div>
+                    </div>
+                    <div class="cert-badge">
+                        <div class="cert-icon-lg"><i class="fa-solid fa-database"></i></div>
+                        <div class="cert-title">SQL & Relational Databases 101</div>
+                        <div class="cert-issuer">IBM (Cognitive Class)</div>
+                    </div>
+                    <div class="cert-badge">
+                        <div class="cert-icon-lg"><i class="fa-brands fa-python"></i></div>
+                        <div class="cert-title">Python for AI and Data Science</div>
+                        <div class="cert-issuer">IBM (Coursera)</div>
+                    </div>
+                    <div class="cert-badge">
+                        <div class="cert-icon-lg"><i class="fa-solid fa-award"></i></div>
+                        <div class="cert-title">Young Professional</div>
+                        <div class="cert-issuer">TCS iON</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & FOOTER -->
+        <footer id="contact" class="footer-kickass reveal">
+            <div class="container footer-kickass-glass text-center">
+                <h2 class="section-title-lg mb-4">Let's Connect</h2>
+                <p class="text-secondary mb-5">Open to Full Stack Developer opportunities.</p>
+
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form mb-5">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <center><button type="submit" class="btn-premium">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane ms-2"></i>
+                        </button></center>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+
+                <div class="footer-socials">
+                    <a href="mailto:ngawande256@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/nishant-g3/" target="_blank" class="social-btn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Nishantsg3" target="_blank" class="social-btn"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/im.__nishant/" target="_blank" class="social-btn"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+
+                <p class="footer-text">&copy; 2026 Nishant Gawande.</p>
+            </div>
+        </footer>
+
+    </div> <!-- END MAIN CONTENT -->
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
