@@ -1,26 +1,21 @@
 # 🚀 Nishant Gawande — Portfolio
 
-A modern, high-performance personal portfolio showcasing my work as an **Entry-Level Software / Frontend Developer**, focused on clean UI, smooth animations, and real-world projects.
+A modern, premium personal portfolio website showcasing Full Stack Java Development skills with smooth animations, interactive visuals, and a clean professional design.
 
 ---
 
 ## ✨ Key Features
 
-### Visual Design
-- Animated canvas-based particle system
-- Scroll-based section color transitions
-- Glassmorphism-inspired modern layout
-- Dark / Light mode with theme persistence
-
-### Engineering Highlights
-- Built using **100% Vanilla JavaScript**
-- Optimized canvas rendering
-- Responsive design across all devices
-- SEO-friendly metadata and structured data
+- Animated hero background
+- Glassmorphism-inspired UI
+- Smooth scrolling and transitions
+- Fully responsive (desktop, tablet, mobile)
+- SEO-friendly semantic HTML
+- Lightweight and fast-loading
 
 ---
 
-## 📂 Website Sections
+## 📌 Website Sections
 
 - Hero section with animated background
 - About & statistics
@@ -33,47 +28,68 @@ A modern, high-performance personal portfolio showcasing my work as an **Entry-L
 
 ## 📁 Project Structure
 
+```text
 Portfolio/
 ├── index.html
 ├── css/
-│ └── style.css
+│   └── style.css
 ├── js/
-│ └── script.js
+│   └── script.js
 ├── img/
-│ └── images and assets
+│   ├── bg.jpg
+│   ├── favicon.png
+│   └── images and assets
 ├── Nishant_Gawande_9421751107.pdf
 └── README.md
-
----
-
+```
 ## 🛠️ Technologies Used
 
-- **HTML5** — Semantic markup, SEO
-- **CSS3** — Animations, glassmorphism, gradients
-- **JavaScript (ES6+)** — Canvas API, observers, localStorage
-- **Bootstrap 5** — Responsive grid and utilities
-- **Font Awesome** — Icons
+- **HTML5** — Semantic markup, SEO-friendly  
+- **CSS3** — Animations, glassmorphism, gradients  
+- **JavaScript (ES6+)** — DOM, canvas effects, observers  
+- **Bootstrap 5** — Responsive grid and utilities  
+- **Font Awesome** — Icons  
 - **Google Fonts** — Poppins & Fira Code
 
----
-
-## 📱 Browser Support
+## 🌍 Browser Support
 
 - Chrome / Edge
 - Firefox
 - Safari
 - Mobile browsers
 
----
+## 🎨 Color Palette
 
-## 📫 Contact
+| Color | Hex | Usage |
+|------|-----|------|
+| Aurora Blue | `#3b82f6` | Primary accents |
+| Aurora Purple | `#a855f7` | Gradients |
+| Aurora Teal | `#14b8a6` | Highlights |
+| Dark Background | `#05060f` | Dark mode |
+| Light Background | `#ffffff` | Light sections |
 
-**Nishant Gawande**  
-📧 Email: ngawande256@gmail.com  
-💼 LinkedIn: https://linkedin.com/in/nishant-g3  
-🐙 GitHub: https://github.com/Nishantsg3  
+## 🧾 Customization
 
----
+Edit index.html to update content and sections
+
+Replace img/bg.jpg with your profile photo
+
+Replace Nishant_Gawande_9421751107.pdf with your resume
+
+Update project images inside img/
+
+## 🤝 Contact
+
+Nishant Gawande
+
+📧 Email: ngawande256@gmail.com
+
+💼 LinkedIn: https://linkedin.com/in/nishant-g3
+
+🐙 GitHub: https://github.com/Nishantsg3
+
+## 📝 License
+
+Free to use for personal portfolios. Credit appreciated.
 
 ⭐ If you like this portfolio, feel free to star the repository.
-
