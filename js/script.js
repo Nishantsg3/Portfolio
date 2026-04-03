@@ -322,8 +322,8 @@
     Intro2SDE: 'assets/certificates/Intro2SDE.jpg',
     SQL: 'assets/certificates/SQL.jpg',
     Python: 'assets/certificates/Python.jpg',
-    // Java4begineers: 'assets/certificates/Java4begineers.jpg'
     TCSYP: 'assets/certificates/TCSYP.jpg',
+    Java4begineers: 'assets/certificates/Java4begineers.jpg'
   };
 
   const modal = document.getElementById('certModal');

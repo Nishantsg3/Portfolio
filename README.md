@@ -1,144 +1,167 @@
 <p align="center">
-  <img src="img/og-preview.png" alt="Portfolio Preview" width="700">
+  <img src="img/og-preview.png" alt="Portfolio Preview" width="700" />
 </p>
 
-<h1 align="center">&lt;NG/&gt; — Portfolio</h1>
+<h1 align="center">&lt;NG/&gt;</h1>
 
 <p align="center">
-  <b>Full-Stack Java Developer</b> · Java · Spring Boot · React · MySQL<br>
-  <a href="https://portfoliong-web.netlify.app">🌐 Live Site</a> · <a href="https://linkedin.com/in/nishant-g3">LinkedIn</a> · <a href="https://github.com/Nishantsg3">GitHub</a>
+  Personal portfolio of <strong>Nishant Gawande</strong> — Full-Stack Java Developer<br/>
+  Built with vanilla HTML, CSS, and JavaScript. Zero frameworks, zero dependencies, zero compromise.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Netlify">
+  <a href="https://portfoliong-web.netlify.app"><img src="https://img.shields.io/badge/Live%20Site-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Live Site"></a>
+  <a href="https://linkedin.com/in/nishant-g3"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://github.com/Nishantsg3"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/PWA-5A0FC8?style=flat&logo=pwa&logoColor=white">
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white">
 </p>
 
 ---
 
-## ✨ Features
+## Overview
 
-| Category | Details |
-|:---------|:--------|
-| **Design** | Dark theme, crimson accents, glassmorphism, anime-inspired SVG icons |
-| **Animations** | Preloader, scroll reveals, 3D card tilt, typewriter effect, stat counter |
-| **Interactive** | Magnetic CTAs, cursor follower, parallax hero, dynamic page titles |
-| **Mobile** | Fully responsive (1024/768/480/360px), touch-optimized, finger-swipe scroll indicator |
-| **SEO** | Open Graph, Twitter Cards, sitemap, robots.txt, semantic HTML |
-| **Performance** | `content-visibility: auto`, lazy loading, `prefers-reduced-motion` support |
-| **Contact** | Working form via Formspree, email copy-to-clipboard |
-| **Easter Eggs** | 11 hidden interactions — type `?` to reveal the cheat sheet |
+A fully handcrafted single-page portfolio — dark theme, crimson accents, glassmorphism UI — built without any frontend framework. Features 34 JavaScript modules covering everything from IntersectionObserver-driven scroll reveals to a 3D card tilt engine, Konami Code easter eggs, and a working contact form. Scored for performance with `content-visibility: auto`, lazy loading, and `prefers-reduced-motion` support baked in.
 
 ---
 
-## 📸 Screenshots
+## Features
 
-<p align="center">
-  <img src="img/og-preview.png" alt="Hero Section" width="600">
-</p>
+### Design & UI
+- Dark theme with crimson accent system and glassmorphism card surfaces
+- Anime-inspired SVG icon set, custom cursor follower, magnetic CTAs
+- 3D card tilt on hover, parallax hero section, dynamic `<title>` on tab blur
+
+### Animation Engine
+- Preloader sequence, typewriter effect, animated stat counters
+- Scroll-reveal via `IntersectionObserver` — no ScrollMagic, no GSAP
+- Barrel roll, Matrix rain, screen shake — all CSS-triggered via JS class injection
+
+### Responsiveness & Accessibility
+- 4 breakpoints: 1024 / 768 / 480 / 360px
+- Touch-optimized, swipe scroll indicator on mobile
+- ARIA labels, semantic HTML5, `prefers-reduced-motion` respected throughout
+
+### Performance & SEO
+- `content-visibility: auto` on off-screen sections
+- Lazy-loaded images, preconnect hints for Google Fonts
+- Full Open Graph + Twitter Card metadata, `sitemap.xml`, `robots.txt`
+
+### Contact & PWA
+- Functional contact form via Formspree, email copy-to-clipboard
+- `manifest.json` for PWA-lite installability
+- Netlify `_headers` for security + caching, `_redirects` for SPA fallback
 
 ---
 
-## 📁 Project Structure
+## Easter Eggs
+
+Hold `?` anywhere on the page to reveal the full cheat sheet, or explore:
+
+| Trigger | Effect |
+|:--------|:-------|
+| `↑↑↓↓←→←→BA` | Konami Code flash |
+| Triple-click `<NG/>` logo | Matrix rain |
+| Type `1337` | Leet hacker flash |
+| Hover logo for 2s | Logo glitch |
+| Type `bankai` | Anime screen shake |
+| Type `roll` | Barrel roll |
+| 5× click the year | Time warp scramble |
+| Type `blue` / `gold` / `green` | Live theme swap |
+| Triple-click "Solid." | 🧱 |
+| Open DevTools | Console greeting |
+
+11 total. You probably won't find them all without the cheat sheet.
+
+---
+
+## Project Structure
 
 ```
 Portfolio/
-├── index.html                    # Single-page app — all sections
+├── index.html                      
 ├── css/
-│   └── style.css                 # 2500+ lines — BEM, custom properties, responsive
+│   └── style.css                  
 ├── js/
-│   └── script.js                 # 34 features — core, easter eggs, polish
+│   └── script.js                  
 ├── img/
-│   ├── bg.jpg                    # Profile photo
-│   ├── favicon.png               # Browser tab icon
-│   └── og-preview.png            # Social media share image
+│   ├── bg.jpg                      
+│   ├── favicon.png                 
+│   └── og-preview.png              
 ├── assets/
-│   └── certificates/             # cert1.jpg – cert5.jpg
-├── Nishant_Gawande_9421751107.pdf  # Resume (downloadable)
-├── manifest.json                 # PWA-lite manifest
-├── robots.txt                    # Search engine rules
-├── sitemap.xml                   # Sitemap for crawlers
-├── _headers                      # Netlify security & caching headers
-├── _redirects                    # Netlify SPA fallback
+│   └── certificates/               
+├── Nishant_Gawande_9421751107.pdf  
+├── manifest.json                  
+├── robots.txt
+├── sitemap.xml
+├── _headers                      
+├── _redirects                     
 └── .gitignore
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **HTML5** — Semantic markup, accessibility (ARIA), SEO meta tags
-- **CSS3** — Custom properties, BEM, animations, glassmorphism, 4 breakpoints
-- **JavaScript (ES6+)** — IntersectionObserver, Web APIs, IIFEs, strict mode
-- **Font Awesome 6** — Icon library
-- **Google Fonts** — Inter, Space Grotesk, JetBrains Mono, DM Serif Display, Outfit
-- **Formspree** — Contact form backend
-- **Netlify** — Hosting with custom headers & redirects
-
----
-
-## 🎮 Easter Eggs
-
-Type `?` (hold it) to reveal the cheat sheet, or try these:
-
-| Trigger | Effect |
-|:--------|:-------|
-| `↑↑↓↓←→←→BA` | Konami Code flash |
-| 3× click `<NG/>` logo | Matrix rain |
-| Type `1337` | Hacker flash |
-| Hover logo 2s | Logo glitch |
-| Type `bankai` | Anime screen shake |
-| Type `roll` | Barrel roll |
-| 5× click year | Time warp scramble |
-| Type `blue` / `gold` / `green` | Color theme swap |
-| 3× click "Solid." | 🧱 |
-| `F12` console | Dev greeting |
+| Layer | Tech |
+|:------|:-----|
+| Markup | HTML5 — semantic, ARIA-labeled, SEO meta |
+| Styling | CSS3 — custom properties, BEM, glassmorphism, 4 breakpoints |
+| Logic | JavaScript ES6+ — IIFEs, IntersectionObserver, Web APIs, strict mode |
+| Icons | Font Awesome 6 |
+| Fonts | JetBrains Mono, DM Serif Display, Outfit (Google Fonts) |
+| Forms | Formspree |
+| Hosting | Netlify (custom headers + redirects) |
 
 ---
 
-## 🚀 Run Locally
+## Run Locally
 
 ```bash
-# Clone the repo
 git clone https://github.com/Nishantsg3/Portfolio.git
 cd Portfolio
 
-# Open in browser (any method works)
-open index.html        # macOS
-xdg-open index.html    # Linux
-start index.html       # Windows
+# Option 1 — just open the file
+open index.html          # macOS
+xdg-open index.html      # Linux
+start index.html         # Windows
 
-# Or use a local server
+# Option 2 — local dev server (recommended)
 npx serve .
 ```
 
+No build step. No `npm install`. It just works.
+
 ---
 
-## 🌍 Browser Support
+## Browser Support
 
 | Browser | Status |
 |:--------|:-------|
-| Chrome / Edge | ✅ |
-| Firefox | ✅ |
-| Safari | ✅ |
-| Mobile (iOS/Android) | ✅ |
+| Chrome / Edge | ✅ Full support |
+| Firefox | ✅ Full support |
+| Safari | ✅ Full support |
+| iOS / Android | ✅ Touch-optimized |
 
 ---
 
-## 📬 Contact
+## Contact
 
 **Nishant Gawande**
-
-- 📧 [ngawande256@gmail.com](mailto:ngawande256@gmail.com)
-- 💼 [LinkedIn](https://linkedin.com/in/nishant-g3)
-- 🐙 [GitHub](https://github.com/Nishantsg3)
+📧 [ngawande256@gmail.com](mailto:ngawande256@gmail.com)
+💼 [linkedin.com/in/nishant-g3](https://linkedin.com/in/nishant-g3)
+🐙 [github.com/Nishantsg3](https://github.com/Nishantsg3)
 
 ---
 
-## 📝 License
+## License
 
 Free to use for personal portfolios. Credit appreciated.
 
-⭐ If you like this portfolio, **star the repo!**
+⭐ If this helped you, drop a star.
