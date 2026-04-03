@@ -1,0 +1,16 @@
+{
+  "name": "Nishant Gawande — Portfolio",
+  "short_name": "NG Portfolio",
+  "description": "Full-Stack Java Developer portfolio — Java, Spring Boot, React, MySQL",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "icons": [
+    {
+      "src": "img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
