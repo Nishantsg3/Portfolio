@@ -68,13 +68,15 @@
     <!-- ═══════════ NAVBAR ════════════════════════════════== -->
     <nav id="navbar" class="navbar">
         <div class="nav-inner">
-            <a href="#home" class="nav-brand">&lt;NG/&gt;</a>
+            <a href="#home" class="nav-brand">Nishant Gawande</a>
             <div id="nav-links" class="nav-links">
-                <a href="#home" class="active">Home</a>
+                <a href="#home" class="active"><i class="fas fa-home" aria-hidden="true" style="margin-right: 4px;"></i>Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#recommendations">Recommendations</a>
                 <a href="#contact">Contact</a>
             </div>
             <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -189,8 +191,8 @@
                             <span class="stat__label">Projects Built</span>
                         </div>
                         <div class="stat">
-                            <span class="stat__num">1</span>
-                            <span class="stat__label">Project Live</span>
+                            <span class="stat__num">2</span>
+                            <span class="stat__label">Projects Live</span>
                         </div>
                         <div class="stat">
                             <span class="stat__num">3+</span>
@@ -232,8 +234,7 @@
                         <h3>Frontend</h3>
                     </div>
                     <div class="skill-group__items">
-                        <span>HTML5</span><span>CSS3</span><span>Bootstrap</span>
-                        <span>JavaScript</span><span>jQuery</span><span>Tailwind CSS</span><span>React.js</span>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Tailwind CSS</span><span>React</span><span>Bootstrap</span><span>jQuery</span>
                     </div>
                 </div>
 
@@ -243,8 +244,7 @@
                         <h3>Backend</h3>
                     </div>
                     <div class="skill-group__items">
-                        <span>REST API</span><span>PHP</span><span>Spring MVC</span>
-                        <span>Spring Boot</span><span>JSP</span><span>Servlets</span><span>Maven</span>
+                        <span>Spring Boot</span><span>JWT Authentication</span><span>REST APIs</span><span>PHP</span><span>Spring MVC</span><span>JSP</span><span>Servlets</span><span>Maven</span>
                     </div>
                 </div>
 
@@ -255,8 +255,7 @@
                         <h3>Database</h3>
                     </div>
                     <div class="skill-group__items">
-                        <span>SQL</span><span>JDBC</span><span>PostgreSQL</span>
-                        <span>Hibernate</span><span>MySQL</span>
+                        <span>PostgreSQL</span><span>MySQL</span><span>SQL</span><span>JDBC</span><span>Hibernate</span>
                     </div>
                 </div>
 
@@ -266,8 +265,7 @@
                         <h3>Tools &amp; Platform</h3>
                     </div>
                     <div class="skill-group__items">
-                        <span>Git</span><span>Jira</span><span>Linux</span>
-                        <span>Github</span><span>Ubuntu</span><span>VS Code</span><span>Eclipse</span><span>IntelliJ IDEA</span><span>Netlify</span>
+                        <span>Git</span><span>GitHub</span><span>Linux</span><span>VS Code</span><span>Jira</span><span>Ubuntu</span><span>Eclipse</span><span>IntelliJ IDEA</span><span>Netlify</span>
                     </div>
                 </div>
 
@@ -287,8 +285,8 @@
 
             <div class="projects-grid">
 
-                <!-- CH.01 — flagship -->
-                <div class="ch-card ch-card--flag reveal">
+                <!-- CH.01 — Flagship Featured Project -->
+                <div class="ch-card ch-card--flag ch-card--featured reveal">
                     <div class="ch-card__head">
                         <div class="ch-stamp">
                             <svg viewBox="0 0 48 48">
@@ -296,27 +294,41 @@
                             </svg>
                             <span>CH.01</span>
                         </div>
-                        <span class="ch-badge ch-badge--live">LIVE</span>
+                        <div class="ch-badges">
+                            <span class="ch-badge ch-badge--featured">FEATURED</span>
+                            <span class="ch-badge ch-badge--live">LIVE</span>
+                        </div>
                     </div>
                     <div class="ch-card__body">
-                        <h3 class="ch-card__title">Engiplex Solutions</h3>
-                        <p class="ch-card__desc">Live commercial EdTech platform — Lead Developer in a 3-person team.
-                            Built the full responsive frontend, integrated Google Sheets API for real-time enquiry
-                            management, and deployed to production on Hostinger.</p>
+                        <h3 class="ch-card__title">LearnIQ</h3>
+                        <p class="ch-card__desc">Advanced assessment and learning intelligence platform featuring synchronized testing, analytics dashboards, JWT authentication, role-based access control, automated scoring, email workflows, and responsive student/admin portals.</p>
+                        
+                        <!-- Lightweight Feature Tags -->
+                        <div class="ch-card__metrics">
+                            <div class="metric-chip"><i class="fas fa-user-shield" aria-hidden="true"></i> Role-Based Auth</div>
+                            <div class="metric-chip"><i class="fas fa-history" aria-hidden="true"></i> Real-Time Testing</div>
+                            <div class="metric-chip"><i class="fas fa-chart-line" aria-hidden="true"></i> Analytics &amp; Leaderboard</div>
+                            <div class="metric-chip"><i class="fas fa-envelope" aria-hidden="true"></i> Email Results</div>
+                            <div class="metric-chip"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Responsive Portals</div>
+                            <div class="metric-chip"><i class="fas fa-cloud-upload-alt" aria-hidden="true"></i> Production Deployed</div>
+                        </div>
+
                         <div class="ch-card__tech">
-                            <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span>
-                            <span>Google Sheets API</span><span>Bootstrap</span>
+                            <span>React 18</span><span>Vite</span><span>Tailwind CSS</span><span>Java 17</span><span>Spring Boot 3</span><span>JWT Authentication</span><span>Spring Security</span><span>PostgreSQL</span><span>Render</span><span>JavaMail</span>
                         </div>
                     </div>
                     <div class="ch-card__links">
-                        <a href="https://engiplex.in" class="btn btn--sm btn--fill" target="_blank" rel="noopener">
-                            Visit Live Site <i class="fas fa-external-link-alt"></i>
+                        <a href="https://learniq-frontend-7oyn.onrender.com" class="btn btn--sm btn--fill" target="_blank" rel="noopener noreferrer">
+                            Live Demo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/Nishantsg3/LearnIQ" class="btn btn--sm btn--ghost" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- CH.02 -->
-                <div class="ch-card reveal">
+                <!-- CH.02 — Secondary Featured Horizontal Project -->
+                <div class="ch-card ch-card--flag ch-card--semi-featured reveal">
                     <div class="ch-card__head">
                         <div class="ch-stamp">
                             <svg viewBox="0 0 48 48">
@@ -324,12 +336,59 @@
                             </svg>
                             <span>CH.02</span>
                         </div>
+                        <div class="ch-badges">
+                            <span class="ch-badge ch-badge--semi">FEATURED</span>
+                            <span class="ch-badge ch-badge--live">LIVE</span>
+                        </div>
+                    </div>
+                    <div class="ch-card__body">
+                        <h3 class="ch-card__title">Engiplex Solutions</h3>
+                        <p class="ch-card__desc">Live commercial EdTech platform — Lead Developer in a 3-person team.
+                            Built the full responsive frontend, integrated Google Sheets API for real-time enquiry
+                            management, and deployed to production on Hostinger.</p>
+                        
+                        <!-- Lightweight Feature Tags -->
+                        <div class="ch-card__metrics">
+                            <div class="metric-chip"><i class="fas fa-bolt" aria-hidden="true"></i> Real-Time Enquiry</div>
+                            <div class="metric-chip"><i class="fas fa-globe" aria-hidden="true"></i> Production Deployment</div>
+                            <div class="metric-chip"><i class="fas fa-display" aria-hidden="true"></i> Responsive Frontend</div>
+                        </div>
+
+                        <div class="ch-card__tech">
+                            <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span>
+                            <span>Google Sheets API</span><span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="ch-card__links">
+                        <a href="https://engiplex.in" class="btn btn--sm btn--fill" target="_blank" rel="noopener noreferrer">
+                            Visit Live Site <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CH.03 -->
+                <div class="ch-card reveal">
+                    <div class="ch-card__head">
+                        <div class="ch-stamp">
+                            <svg viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="22" fill="none" stroke="#7a1e2b" stroke-width="1.5" />
+                            </svg>
+                            <span>CH.03</span>
+                        </div>
                         <span class="ch-badge ch-badge--live">LIVE</span>
                     </div>
                     <div class="ch-card__body">
                         <h3 class="ch-card__title">Symphony</h3>
                         <p class="ch-card__desc">Interactive web instrument app — Piano, Guitar, Drums, Violin —
                             playable directly in the browser using Web Audio API.</p>
+                        
+                        <!-- Lightweight Feature Tags -->
+                        <div class="ch-card__metrics">
+                            <div class="metric-chip"><i class="fas fa-music" aria-hidden="true"></i> Web Audio API</div>
+                            <div class="metric-chip"><i class="fas fa-guitar" aria-hidden="true"></i> Multi-Instrument</div>
+                            <div class="metric-chip"><i class="fas fa-play" aria-hidden="true"></i> Interactive Playback</div>
+                        </div>
+
                         <div class="ch-card__tech">
                             <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Web Audio API</span>
                         </div>
@@ -346,32 +405,6 @@
                     </div>
                 </div>
 
-                <!-- CH.03 -->
-                <div class="ch-card reveal">
-                    <div class="ch-card__head">
-                        <div class="ch-stamp">
-                            <svg viewBox="0 0 48 48">
-                                <circle cx="24" cy="24" r="22" fill="none" stroke="#7a1e2b" stroke-width="1.5" />
-                            </svg>
-                            <span>CH.03</span>
-                        </div>
-                    </div>
-                    <div class="ch-card__body">
-                        <h3 class="ch-card__title">FinCore Banking System</h3>
-                        <p class="ch-card__desc">Core banking application demonstrating OOP mastery — Account
-                            Management, Fund Transfers, Transaction History, and Statement Generation.</p>
-                        <div class="ch-card__tech">
-                            <span>Java</span><span>JDBC</span><span>MySQL</span><span>DAO Pattern</span>
-                        </div>
-                    </div>
-                    <div class="ch-card__links">
-                        <a href="https://github.com/Nishantsg3/java-banking-system" class="btn btn--sm btn--ghost"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
-
                 <!-- CH.04 -->
                 <div class="ch-card reveal">
                     <div class="ch-card__head">
@@ -383,15 +416,23 @@
                         </div>
                     </div>
                     <div class="ch-card__body">
-                        <h3 class="ch-card__title">Grocery Shopping System</h3>
-                        <p class="ch-card__desc">Console-based shopping app with product browsing, cart management,
-                            checkout flow, and admin inventory controls.</p>
+                        <h3 class="ch-card__title">FinCore Banking System</h3>
+                        <p class="ch-card__desc">Core banking application demonstrating OOP mastery — Account
+                            Management, Fund Transfers, Transaction History, and Statement Generation.</p>
+                        
+                        <!-- Lightweight Feature Tags -->
+                        <div class="ch-card__metrics">
+                            <div class="metric-chip"><i class="fas fa-receipt" aria-hidden="true"></i> Transaction History</div>
+                            <div class="metric-chip"><i class="fas fa-user-gear" aria-hidden="true"></i> Account Management</div>
+                            <div class="metric-chip"><i class="fas fa-database" aria-hidden="true"></i> JDBC Integration</div>
+                        </div>
+
                         <div class="ch-card__tech">
-                            <span>Java</span><span>OOP</span><span>Console App</span>
+                            <span>Java</span><span>JDBC</span><span>MySQL</span><span>DAO Pattern</span>
                         </div>
                     </div>
                     <div class="ch-card__links">
-                        <a href="https://github.com/Nishantsg3/grocery-shopping-system-java" class="btn btn--sm btn--ghost"
+                        <a href="https://github.com/Nishantsg3/java-banking-system" class="btn btn--sm btn--ghost"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> Code
                         </a>
@@ -407,12 +448,54 @@
                             </svg>
                             <span>CH.05</span>
                         </div>
+                    </div>
+                    <div class="ch-card__body">
+                        <h3 class="ch-card__title">Grocery Shopping System</h3>
+                        <p class="ch-card__desc">Console-based shopping app with product browsing, cart management,
+                            checkout flow, and admin inventory controls.</p>
+                        
+                        <!-- Lightweight Feature Tags -->
+                        <div class="ch-card__metrics">
+                            <div class="metric-chip"><i class="fas fa-cart-shopping" aria-hidden="true"></i> Cart System</div>
+                            <div class="metric-chip"><i class="fas fa-warehouse" aria-hidden="true"></i> Admin Inventory</div>
+                            <div class="metric-chip"><i class="fas fa-terminal" aria-hidden="true"></i> Console Workflow</div>
+                        </div>
+
+                        <div class="ch-card__tech">
+                            <span>Java</span><span>OOP</span><span>Console App</span>
+                        </div>
+                    </div>
+                    <div class="ch-card__links">
+                        <a href="https://github.com/Nishantsg3/grocery-shopping-system-java" class="btn btn--sm btn--ghost"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CH.06 -->
+                <div class="ch-card reveal">
+                    <div class="ch-card__head">
+                        <div class="ch-stamp">
+                            <svg viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="22" fill="none" stroke="#7a1e2b" stroke-width="1.5" />
+                            </svg>
+                            <span>CH.06</span>
+                        </div>
                         <span class="ch-badge ch-badge--live">LIVE</span>
                     </div>
                     <div class="ch-card__body">
                         <h3 class="ch-card__title">Quiz Hub</h3>
                         <p class="ch-card__desc">Interactive quiz platform with timed questions, score tracking,
                             and category selection.</p>
+                        
+                        <!-- Lightweight Feature Tags -->
+                        <div class="ch-card__metrics">
+                            <div class="metric-chip"><i class="fas fa-stopwatch" aria-hidden="true"></i> Timed Quiz</div>
+                            <div class="metric-chip"><i class="fas fa-trophy" aria-hidden="true"></i> Score Tracking</div>
+                            <div class="metric-chip"><i class="fas fa-list-ul" aria-hidden="true"></i> Dynamic Categories</div>
+                        </div>
+
                         <div class="ch-card__tech">
                             <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
                         </div>
@@ -516,46 +599,56 @@
                     <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
                 </div>
 
-                <div class="cert" data-cert="SQL" data-cert-title="SQL & Relational Databases 101"
-                    data-cert-issuer="IBM — Cognitive Class" role="button" tabindex="0">
-                    <div class="cert__icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+                <div class="cert" data-cert="JavaAppDev" data-cert-title="Java App Development Project: Fundamentals, OOP & File I/O"
+                    data-cert-issuer="SkillUp" role="button" tabindex="0">
+                    <div class="cert__icon"><i class="fas fa-code-branch" aria-hidden="true"></i></div>
                     <div class="cert__info">
-                        <div class="cert__title">SQL &amp; Relational Databases 101</div>
-                        <div class="cert__issuer">IBM — Cognitive Class</div>
+                        <div class="cert__title">Java App Dev Project: OOP &amp; File I/O</div>
+                        <div class="cert__issuer">SkillUp</div>
                     </div>
                     <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
                 </div>
 
-                <div class="cert" data-cert="Python" data-cert-title="Python for Data Science & AI"
-                    data-cert-issuer="IBM — Coursera" role="button" tabindex="0">
-                    <div class="cert__icon"><i class="fa-brands fa-python" aria-hidden="true"></i></div>
-                    <div class="cert__info">
-                        <div class="cert__title">Python for Data Science &amp; AI</div>
-                        <div class="cert__issuer">IBM — Coursera</div>
-                    </div>
-                    <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
-                </div>
-
-                
-                <div class="cert" data-cert="TCSYP" data-cert-title="Career Edge Young Professional"
-                data-cert-issuer="TCS iON" role="button" tabindex="0">
-                <div class="cert__icon"><i class="fas fa-award" aria-hidden="true"></i></div>
-                <div class="cert__info">
-                        <div class="cert__title">Career Edge Young Professional</div>
-                        <div class="cert__issuer">TCS iON</div>
-                    </div>
-                    <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
-                </div>
-                
                 <div class="cert" data-cert="Java4begineers" data-cert-title="Java Programming for Beginners"
                     data-cert-issuer="IBM — Coursera" role="button" tabindex="0">
-                    <div class="cert__icon"><i class="fa-brands fa-java" aria-hidden="true"></i></div>
+                    <div class="cert__icon"><i class="fab fa-java" aria-hidden="true"></i></div>
                     <div class="cert__info">
                         <div class="cert__title">Java Programming for Beginners</div>
                         <div class="cert__issuer">IBM — Coursera</div>
                     </div>
                     <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
                 </div>
+
+                <div class="cert" data-cert="OOPJava" data-cert-title="Object Oriented Programming in Java"
+                    data-cert-issuer="IBM — Coursera" role="button" tabindex="0">
+                    <div class="cert__icon"><i class="fas fa-cube" aria-hidden="true"></i></div>
+                    <div class="cert__info">
+                        <div class="cert__title">Object Oriented Programming in Java</div>
+                        <div class="cert__issuer">IBM — Coursera</div>
+                    </div>
+                    <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+
+                <div class="cert" data-cert="Python" data-cert-title="Python for Data Science, AI & Development"
+                    data-cert-issuer="IBM — Coursera" role="button" tabindex="0">
+                    <div class="cert__icon"><i class="fab fa-python" aria-hidden="true"></i></div>
+                    <div class="cert__info">
+                        <div class="cert__title">Python for Data Science, AI &amp; Dev</div>
+                        <div class="cert__issuer">IBM — Coursera</div>
+                    </div>
+                    <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+
+                <div class="cert" data-cert="GitGitHub" data-cert-title="Getting Started with Git and GitHub"
+                    data-cert-issuer="IBM — Coursera" role="button" tabindex="0">
+                    <div class="cert__icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+                    <div class="cert__info">
+                        <div class="cert__title">Getting Started with Git and GitHub</div>
+                        <div class="cert__issuer">IBM — Coursera</div>
+                    </div>
+                    <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -585,6 +678,104 @@
     </div>
 
     <div class="arc-divider arc-divider--l" aria-hidden="true"></div>
+
+    <!-- ═══════════ RECOMMENDATIONS ═════════════════════════ -->
+    <section id="recommendations" class="sec sec--dark" data-section-label="PEER FEEDBACK">
+        <div class="sec__inner">
+            <div class="sec__head reveal">
+                <span class="sec__arc">Collaboration Arc</span>
+                <h2 class="sec__title">PEER FEEDBACK</h2>
+                <p class="sec__desc" style="opacity: 0.4; font-size: 0.72rem; font-family: var(--mono); margin-top: 0.5rem;">Demo feedback entries for portfolio showcase.</p>
+            </div>
+
+            <!-- Pre-written recommendations cards -->
+            <div class="recs-grid reveal" id="recs-grid">
+                <div class="rec-card">
+                    <div class="rec-card__quote"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
+                    <p class="rec-card__text">Nishant demonstrates strong capabilities in modern Java and Spring Boot architecture. His focus on structural design, API development, and performant backends stands out in project collaborations.</p>
+                    <div class="rec-card__author">
+                        <div class="rec-card__avatar"><i class="fas fa-user-gear" aria-hidden="true"></i></div>
+                        <div class="rec-card__meta">
+                            <span class="rec-card__name">Peer Developer</span>
+                            <span class="rec-card__role">Collaborator | Coursera Full-Stack Path</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rec-card">
+                    <div class="rec-card__quote"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
+                    <p class="rec-card__text">Collaborating with Nishant on LearnIQ showed his clean execution in React, responsive CSS grid layouts, and structured state integration. Delivered modern frontend interfaces reliably.</p>
+                    <div class="rec-card__author">
+                        <div class="rec-card__avatar"><i class="fas fa-user-check" aria-hidden="true"></i></div>
+                        <div class="rec-card__meta">
+                            <span class="rec-card__name">Frontend Collaborator</span>
+                            <span class="rec-card__role">Peer Assessor | EdTech Capstone</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rec-card">
+                    <div class="rec-card__quote"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
+                    <p class="rec-card__text">Nishant is skilled in bridging front-to-back connectivity. His handling of secure REST APIs, Spring Security authentication protocols, and database schemas is highly methodical and robust.</p>
+                    <div class="rec-card__author">
+                        <div class="rec-card__avatar"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                        <div class="rec-card__meta">
+                            <span class="rec-card__name">Full-Stack Peer Reviewer</span>
+                            <span class="rec-card__role">Code Reviewer | Backend Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightweight Feedback Widget -->
+            <div class="rec-form-wrap reveal">
+                <h3 class="rec-form__title"><i class="far fa-comments" style="color: var(--accent); margin-right: 8px;"></i>Share Collaboration Feedback</h3>
+                <p class="rec-form__sub">Submit peer developer reviews or capstone project collaborator notes.</p>
+                
+                <form id="recommendation-form" class="form form--widget">
+                    <div class="form__row">
+                        <div class="form__field">
+                            <label for="rec-name">Name</label>
+                            <input type="text" id="rec-name" name="name" placeholder="e.g., Peer Reviewer" required autocomplete="name">
+                        </div>
+                        <div class="form__field">
+                            <label for="rec-role">Title / Organization (Optional)</label>
+                            <input type="text" id="rec-role" name="role" placeholder="e.g., Collaborator | Capstone Project" autocomplete="organization-title">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="rec-text">Collaboration Feedback</label>
+                        <textarea id="rec-text" name="text" placeholder="Write feedback, review notes, or peer developer recommendations..." rows="3" required></textarea>
+                    </div>
+                    <div class="form__submit">
+                        <button type="submit" class="btn btn--fill btn--rounded">
+                            Submit Feedback <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom success confirmation modal -->
+    <div id="recModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-rec-title">
+        <div class="modal__box modal__box--small">
+            <div class="modal__header">
+                <div class="modal__header-info">
+                    <h3 class="modal__title" id="modal-rec-title"><i class="fas fa-circle-check" style="color: #3a9e5f; margin-right: 8px;"></i> Success</h3>
+                </div>
+                <button class="modal__close" id="rec-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal__body" style="padding: 1.5rem; text-align: center;">
+                <p style="color: var(--text); font-size: 0.95rem; margin-bottom: 1.5rem;">Thank you for sharing your professional feedback!</p>
+                <button class="btn btn--fill" id="rec-modal-close-btn" style="min-width: 100px; justify-content: center; margin: 0 auto;">
+                    Done
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="arc-divider arc-divider--r" aria-hidden="true"></div>
 
     <!-- ═══════════ CONTACT ═══════════════════════════════== -->
     <section id="contact" class="sec" data-section-label="CONTACT">
@@ -667,21 +858,44 @@
 
     <!-- Scroll to top -->
     <button id="scroll-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Ubuntu Interactive Terminal Overlay -->
+    <div id="terminal-overlay" class="terminal-overlay" aria-hidden="true" role="dialog">
+        <div class="terminal-box">
+            <div class="terminal-box__header">
+                <div class="terminal-box__buttons">
+                    <button class="terminal-box__btn terminal-box__btn--close" id="terminal-close" aria-label="Close terminal"></button>
+                    <span class="terminal-box__btn terminal-box__btn--min"></span>
+                    <span class="terminal-box__btn terminal-box__btn--max"></span>
+                </div>
+                <div class="terminal-box__title">nishant@portfolio:~</div>
+            </div>
+            <div class="terminal-box__body" id="terminal-body">
+                <div class="terminal-line">System: Ubuntu 24.04 LTS (GNU/Linux x86_64)</div>
+                <div class="terminal-line">Type <span class="term-highlight">help</span> for a list of available actions.</div>
+                <div class="terminal-line">&nbsp;</div>
+                <div class="terminal-history" id="terminal-history"></div>
+                <div class="terminal-input-row">
+                    <span class="terminal-prompt">nishant@portfolio:~$</span>
+                    <input type="text" id="terminal-input" class="terminal-input" autofocus autocomplete="off" spellcheck="false" aria-label="Terminal command line input">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Easter Egg Cheat Sheet (hold ?) -->
     <div id="cheat-sheet" class="cheat-sheet" aria-hidden="true">
         <div class="cheat-sheet__inner">
-            <p class="cheat-sheet__title">🥚 SECRET MENU</p>
+            <p class="cheat-sheet__title">💻 DEVELOPER CONSOLE MENU</p>
             <p class="cheat-sheet__hint">Hold <kbd>?</kbd> to peek — release to hide</p>
             <div class="cheat-sheet__grid">
-                <div class="cheat-sheet__item"><kbd>↑↑↓↓←→←→BA</kbd><span>Konami Code</span></div>
+                <div class="cheat-sheet__item"><kbd>Ctrl + `</kbd><span>Ubuntu Terminal</span></div>
+                <div class="cheat-sheet__item"><kbd>↑↑↓↓←→←→BA</kbd><span>Terminal Root Access</span></div>
                 <div class="cheat-sheet__item"><kbd>3× click logo</kbd><span>Matrix Rain</span></div>
-                <div class="cheat-sheet__item"><kbd>1337</kbd><span>Hacker Flash</span></div>
-                <div class="cheat-sheet__item"><kbd>hover logo 2s</kbd><span>Logo Glitch</span></div>
-                <div class="cheat-sheet__item"><kbd>bankai</kbd><span>Anime Aura</span></div>
-                <div class="cheat-sheet__item"><kbd>roll</kbd><span>Barrel Roll</span></div>
+                <div class="cheat-sheet__item"><kbd>1337</kbd><span>Terminal Stats Panel</span></div>
+                <div class="cheat-sheet__item"><kbd>hover logo 2s</kbd><span>"sudo hire nishant"</span></div>
                 <div class="cheat-sheet__item"><kbd>5× click year</kbd><span>Time Warp</span></div>
                 <div class="cheat-sheet__item"><kbd>blue / gold / green</kbd><span>Color Themes</span></div>
-                <div class="cheat-sheet__item"><kbd>3× click "Solid."</kbd><span>🧱</span></div>
                 <div class="cheat-sheet__item"><kbd>F12 Console</kbd><span>Dev Greeting</span></div>
             </div>
         </div>

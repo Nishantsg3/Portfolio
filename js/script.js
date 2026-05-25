@@ -186,6 +186,8 @@
     EDUCATION: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5 3h14a1 1 0 011 1v16a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1z"/><line x1="8" y1="3" x2="8" y2="21"/><circle cx="14" cy="10" r="2.5"/><path d="M13 9.5v1M15 9.5v1"/><path d="M12.5 12.5l1.5 2 1.5-2"/></svg>',
     // Hunter License card (HxH) — rectangular card with star seal
     CERTS: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><line x1="7" y1="9" x2="13" y2="9"/><line x1="7" y1="12" x2="11" y2="12"/><circle cx="17" cy="13" r="2.5"/><path d="M17 11l.5 1.2 1.3.2-1 .9.2 1.3-1-.6-1 .6.2-1.3-1-.9 1.3-.2z" fill="currentColor"/></svg>',
+    // Chat speech bubble icon for Recommendations
+    RECOMMENDATIONS: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="12" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/></svg>',
     // Kunai with message tag (Naruto) — blade + diamond ring + cloth strip
     CONTACT: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2l-3 10h6z"/><circle cx="12" cy="14" r="2"/><path d="M12 16v2"/><path d="M10 18c-2 1-4 2.5-5 3"/><path d="M14 18c2 1 4 2.5 5 3"/></svg>',
     // Infinity loop
@@ -320,10 +322,11 @@
 (function () {
   const certData = {
     Intro2SDE: 'assets/certificates/Intro2SDE.jpg',
-    SQL: 'assets/certificates/SQL.jpg',
+    JavaAppDev: 'assets/certificates/SQL.jpg',
+    Java4begineers: 'assets/certificates/Java4begineers.jpg',
+    OOPJava: 'assets/certificates/Java4begineers.jpg',
     Python: 'assets/certificates/Python.jpg',
-    TCSYP: 'assets/certificates/TCSYP.jpg',
-    Java4begineers: 'assets/certificates/Java4begineers.jpg'
+    GitGitHub: 'assets/certificates/TCSYP.jpg'
   };
 
   const modal = document.getElementById('certModal');
@@ -436,7 +439,175 @@
   });
 })();
 
-/* ── KONAMI CODE EASTER EGG ──────────────────────────────── */
+/* ── UBUNTU DEV TERMINAL SYSTEM ───────────────────────────── */
+(function () {
+  const overlay = document.getElementById('terminal-overlay');
+  const input = document.getElementById('terminal-input');
+  const history = document.getElementById('terminal-history');
+  const closeBtn = document.getElementById('terminal-close');
+
+  if (!overlay || !input || !history || !closeBtn) return;
+
+  let active = false;
+
+  function openTerminal() {
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    input.focus();
+    active = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeTerminal() {
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    active = false;
+    document.body.style.overflow = '';
+  }
+
+  // Ctrl + ` key toggle
+  document.addEventListener('keydown', e => {
+    if (e.ctrlKey && e.key === '`') {
+      e.preventDefault();
+      if (active) closeTerminal();
+      else openTerminal();
+    }
+  });
+
+  closeBtn.addEventListener('click', closeTerminal);
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) closeTerminal();
+  });
+
+  // Focus input when clicking anywhere inside console box
+  const body = document.getElementById('terminal-body');
+  if (body) {
+    body.addEventListener('click', () => {
+      input.focus();
+    });
+  }
+
+  // Command History System
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      const val = input.value.trim();
+      input.value = '';
+      if (!val) return;
+
+      // Echo command
+      echo(`nishant@portfolio:~$ ${val}`, 'prompt-line');
+
+      // Process command
+      processCommand(val.toLowerCase());
+      history.scrollTop = history.scrollHeight;
+    }
+  });
+
+  function echo(text, type = '') {
+    const line = document.createElement('div');
+    line.className = `terminal-line ${type}`;
+    line.innerHTML = text;
+    history.appendChild(line);
+  }
+
+  function processCommand(cmd) {
+    const args = cmd.split(' ');
+    const primary = args[0];
+
+    switch (primary) {
+      case 'help':
+        echo('Available commands:', 'term-header');
+        echo('  <span class="term-highlight">help</span>     - Display this menu');
+        echo('  <span class="term-highlight">skills</span>   - List core developer skill stack');
+        echo('  <span class="term-highlight">projects</span> - List featured engineering works');
+        echo('  <span class="term-highlight">contact</span>  - Get primary contact methods');
+        echo('  <span class="term-highlight">resume</span>   - View professional resume');
+        echo('  <span class="term-highlight">matrix</span>   - Trigger green matrix cascade');
+        echo('  <span class="term-highlight">clear</span>    - Clear console history');
+        echo('  <span class="term-highlight">github</span>   - Redirect to GitHub profile');
+        echo('  <span class="term-highlight">learniq</span>  - Redirect to LearnIQ assessment engine');
+        echo('  <span class="term-highlight">exit</span>     - Close the terminal shell');
+        break;
+
+      case 'skills':
+        echo('CORE TECHNICAL STACK:', 'term-header');
+        echo('  Languages  : Java, JavaScript, HTML5, CSS3, SQL');
+        echo('  Frameworks : Spring Boot, Spring Security, React, JPA');
+        echo('  Databases  : MySQL, PostgreSQL');
+        echo('  Tools      : Git, GitHub, REST APIs, Linux, VS Code');
+        break;
+
+      case 'projects':
+        echo('FEATURED ENGINEERING WORKS:', 'term-header');
+        echo('  CH.01 [LearnIQ] - Flagship assessment platform');
+        echo('  CH.02 [Engiplex Solutions] - Live commercial EdTech site');
+        echo('  CH.03 [Symphony] - Playable multi-instrument app');
+        echo('  CH.04 [FinCore Banking] - Secure financial schema API');
+        echo('  CH.05 [Grocery Shopping] - Console inventory flow');
+        echo('  CH.06 [Quiz Hub] - Responsive categories quiz');
+        break;
+
+      case 'contact':
+        echo('PRIMARY CHANNELS:', 'term-header');
+        echo('  Email: nishantsg3@gmail.com');
+        echo('  GitHub: <a href="https://github.com/Nishantsg3" target="_blank" class="term-link">github.com/Nishantsg3</a>');
+        echo('  LinkedIn: <a href="https://linkedin.com/in/nishant-g3" target="_blank" class="term-link">linkedin.com/in/nishant-g3</a>');
+        break;
+
+      case 'resume':
+        echo('Opening professional resume...');
+        window.open('assets/Nishant_Gawande_Resume.pdf', '_blank');
+        break;
+
+      case 'matrix':
+        echo('Activating Matrix cascade rain...', 'term-success');
+        setTimeout(() => {
+          closeTerminal();
+          triggerMatrixRainGlobal();
+        }, 300);
+        break;
+
+      case 'clear':
+        history.innerHTML = '';
+        break;
+
+      case 'github':
+        echo('Redirecting to GitHub...');
+        window.open('https://github.com/Nishantsg3', '_blank');
+        break;
+
+      case 'learniq':
+        echo('Redirecting to LearnIQ Assessment Engine...');
+        window.open('https://learniq-frontend-7oyn.onrender.com', '_blank');
+        break;
+
+      case 'exit':
+        closeTerminal();
+        break;
+
+      case 'sudo':
+        if (args[1] === 'hire' && args[2] === 'nishant') {
+          echo('ACCESS UNLOCKED: Nishant is highly qualified. Redirecting to Contact...', 'term-success');
+          setTimeout(() => {
+            closeTerminal();
+            window.location.hash = '#contact';
+          }, 1500);
+        } else {
+          echo('Permission denied. Try "sudo hire nishant"');
+        }
+        break;
+
+      default:
+        echo(`bash: ${cmd}: command not found. Type <span class="term-highlight">help</span> for options.`);
+    }
+  }
+
+  // Export openTerminal globally so easter eggs can trigger it
+  window.openDevTerminal = openTerminal;
+  window.echoTerminal = echo;
+})();
+
+/* ── KONAMI CODE EASTER EGG (REWORKED) ────────────────────────── */
 (function () {
   const code = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
   let pos = 0;
@@ -446,37 +617,56 @@
       pos++;
       if (pos === code.length) {
         pos = 0;
-        triggerEasterEgg();
+        triggerKonami();
       }
     } else {
       pos = 0;
     }
   });
 
-  function triggerEasterEgg() {
-    const overlay = document.createElement('div');
-    overlay.style.cssText = `
-      position:fixed;inset:0;z-index:99999;pointer-events:none;
-      background:radial-gradient(circle at center, rgba(122,30,43,0.4) 0%, transparent 70%);
-      animation: eggFlash 1.5s ease forwards;
-    `;
-
-    const text = document.createElement('div');
-    text.textContent = '卐';
-    text.style.cssText = `
-      position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);
-      font-size:10rem;font-weight:900;color:rgba(122,30,43,0.6);
-      font-family:'Space Grotesk',sans-serif;
-      animation: eggPop 1.5s cubic-bezier(0.16,1,0.3,1) forwards;
-    `;
-
-    overlay.appendChild(text);
-    document.body.appendChild(overlay);
-    setTimeout(() => overlay.remove(), 1600);
+  function triggerKonami() {
+    if (typeof window.openDevTerminal === 'function') {
+      window.openDevTerminal();
+      if (typeof window.echoTerminal === 'function') {
+        window.echoTerminal('&nbsp;');
+        window.echoTerminal('nishant@portfolio:~$ ACCESS GRANTED', 'term-success');
+        window.echoTerminal('Loading root developer console profiles...', 'term-success');
+        window.echoTerminal('System stats: cpu=1.2% memory=41% uptime=133.7h');
+        window.echoTerminal('&nbsp;');
+      }
+    }
   }
 })();
 
-/* ── EASTER EGG: TRIPLE-CLICK LOGO — MATRIX RAIN ────────── */
+/* ── EASTER EGG: TYPE '1337' (REWORKED) ────────────────────── */
+(function () {
+  const seq = '1337';
+  let buf = '';
+
+  document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    buf += e.key;
+    if (buf.length > 4) buf = buf.slice(-4);
+    if (buf === seq) {
+      buf = '';
+      if (typeof window.openDevTerminal === 'function') {
+        window.openDevTerminal();
+        if (typeof window.echoTerminal === 'function') {
+          window.echoTerminal('&nbsp;');
+          window.echoTerminal('nishant@portfolio:~$ 1337_MODE = TRUE', 'term-success');
+          window.echoTerminal('Displaying custom dev stats panel:', 'term-header');
+          window.echoTerminal('  - BE Focus     : Java / Spring Boot 3 / Spring Security');
+          window.echoTerminal('  - FE Focus     : React 18 / Vite / Vanilla CSS');
+          window.echoTerminal('  - DB Focus     : PostgreSQL / MySQL');
+          window.echoTerminal('  - Total Work   : 6 Projects (2 Live Deployed)');
+          window.echoTerminal('&nbsp;');
+        }
+      }
+    }
+  });
+})();
+
+/* ── TRIPLE-CLICK LOGO — HACKER MATRIX RAIN ───────────── */
 (function () {
   const brand = document.querySelector('.nav-brand');
   if (!brand) return;
@@ -489,138 +679,76 @@
     if (clicks === 3) {
       clicks = 0;
       e.preventDefault();
-      triggerMatrixRain();
+      triggerMatrixRainGlobal();
     }
   });
+})();
 
-  function triggerMatrixRain() {
-    const canvas = document.createElement('canvas');
-    canvas.style.cssText = 'position:fixed;inset:0;z-index:99998;pointer-events:none;';
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    document.body.appendChild(canvas);
-    const ctx = canvas.getContext('2d');
-    const chars = 'NG</>01アイウエ卐'.split('');
-    const cols = Math.floor(canvas.width / 14);
-    const drops = Array(cols).fill(1);
-    let frame = 0;
+function triggerMatrixRainGlobal() {
+  const canvas = document.createElement('canvas');
+  canvas.style.cssText = 'position:fixed;inset:0;z-index:99998;pointer-events:none;';
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  document.body.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+  const chars = '01$_#@*NG</>'.split('');
+  const cols = Math.floor(canvas.width / 14);
+  const drops = Array(cols).fill(1);
+  let frame = 0;
 
-    function draw() {
-      ctx.fillStyle = 'rgba(13,13,13,0.08)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = 'rgba(122,30,43,0.7)';
-      ctx.font = '12px JetBrains Mono, monospace';
+  function draw() {
+    ctx.fillStyle = 'rgba(13,13,13,0.08)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'rgba(122,30,43,0.7)';
+    ctx.font = '12px monospace';
 
-      for (let i = 0; i < drops.length; i++) {
-        const ch = chars[Math.floor(Math.random() * chars.length)];
-        ctx.fillText(ch, i * 14, drops[i] * 14);
-        if (drops[i] * 14 > canvas.height && Math.random() > 0.97) drops[i] = 0;
-        drops[i]++;
-      }
-
-      frame++;
-      if (frame < 120) requestAnimationFrame(draw);
-      else { canvas.style.transition = 'opacity 0.5s'; canvas.style.opacity = '0'; setTimeout(() => canvas.remove(), 600); }
+    for (let i = 0; i < drops.length; i++) {
+      const ch = chars[Math.floor(Math.random() * chars.length)];
+      ctx.fillText(ch, i * 14, drops[i] * 14);
+      if (drops[i] * 14 > canvas.height && Math.random() > 0.97) drops[i] = 0;
+      drops[i]++;
     }
-    draw();
+
+    frame++;
+    if (frame < 120) requestAnimationFrame(draw);
+    else {
+      canvas.style.transition = 'opacity 0.5s';
+      canvas.style.opacity = '0';
+      setTimeout(() => canvas.remove(), 600);
+    }
   }
-})();
+  draw();
+}
 
-/* ── EASTER EGG: TYPE '1337' — HACKER FLASH ──────────────── */
-(function () {
-  const seq = '1337';
-  let buf = '';
-
-  document.addEventListener('keydown', e => {
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-    buf += e.key;
-    if (buf.length > 4) buf = buf.slice(-4);
-    if (buf === seq) {
-      buf = '';
-      const flash = document.createElement('div');
-      flash.style.cssText = `
-        position:fixed;inset:0;z-index:99999;pointer-events:none;
-        background:radial-gradient(circle, rgba(0,255,65,0.15) 0%, transparent 70%);
-        animation: eggFlash 1s ease forwards;
-      `;
-      const txt = document.createElement('div');
-      txt.textContent = '> ACCESS GRANTED_';
-      txt.style.cssText = `
-        position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-        font-family:'JetBrains Mono',monospace;font-size:1.2rem;color:rgba(0,255,65,0.6);
-        letter-spacing:2px;animation: eggPop 1.2s cubic-bezier(0.16,1,0.3,1) forwards;
-      `;
-      flash.appendChild(txt);
-      document.body.appendChild(flash);
-      setTimeout(() => flash.remove(), 1300);
-    }
-  });
-})();
-
-/* ── EASTER EGG: LOGO GLITCH ON LONG HOVER ───────────────── */
+/* ── EASTER EGG: LOGO GLITCH ON HOVER (REWORKED TO TOOLTIP) ── */
 (function () {
   const brand = document.querySelector('.nav-brand');
   if (!brand) return;
-  let holdTimer;
 
+  const tooltip = document.createElement('div');
+  tooltip.textContent = 'sudo hire nishant';
+  tooltip.style.cssText = `
+    position: absolute; top: calc(var(--nav-h) - 10px); left: 2rem;
+    background: #111; border: 1px solid rgba(122,30,43,0.5);
+    color: var(--text-2); padding: 0.35rem 0.65rem; border-radius: 4px;
+    font-family: var(--mono); font-size: 0.66rem; pointer-events: none;
+    opacity: 0; transition: opacity 0.2s, transform 0.2s;
+    transform: translateY(-5px); z-index: 2000;
+  `;
+  brand.parentNode.appendChild(tooltip);
+
+  let holdTimer;
   brand.addEventListener('mouseenter', () => {
     holdTimer = setTimeout(() => {
-      brand.style.animation = 'brandGlitch 0.3s ease 3';
-      setTimeout(() => { brand.style.animation = ''; }, 1000);
+      tooltip.style.opacity = '1';
+      tooltip.style.transform = 'translateY(0)';
     }, 2000);
   });
 
   brand.addEventListener('mouseleave', () => {
     clearTimeout(holdTimer);
-  });
-})();
-
-/* ── EASTER EGG: TYPE 'bankai' — ANIME SHAKE ─────────────── */
-(function () {
-  const seq = 'bankai';
-  let buf = '';
-  document.addEventListener('keydown', e => {
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-    buf += e.key;
-    if (buf.length > seq.length) buf = buf.slice(-seq.length);
-    if (buf === seq) {
-      buf = '';
-      document.body.classList.add('bankai-shake');
-      
-      const flash = document.createElement('div');
-      flash.style.cssText = `
-        position:fixed;inset:0;z-index:99999;pointer-events:none;
-        background:radial-gradient(circle, transparent 20%, rgba(122,30,43,0.8) 100%);
-        animation: eggFlash 2s ease forwards;
-        box-shadow: inset 0 0 100px rgba(0,0,0,0.9);
-      `;
-      document.body.appendChild(flash);
-
-      setTimeout(() => {
-        document.body.classList.remove('bankai-shake');
-        setTimeout(() => flash.remove(), 500);
-      }, 2000);
-    }
-  });
-})();
-
-/* ── EASTER EGG: TYPE 'roll' — BARREL ROLL ───────────────── */
-(function () {
-  const seq = 'roll';
-  let buf = '';
-  document.addEventListener('keydown', e => {
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-    buf += e.key;
-    if (buf.length > seq.length) buf = buf.slice(-seq.length);
-    if (buf === seq) {
-      buf = '';
-      document.body.style.transition = 'transform 2s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
-      document.body.style.transform = 'rotate(360deg)';
-      setTimeout(() => {
-        document.body.style.transition = 'none';
-        document.body.style.transform = '';
-      }, 2000);
-    }
+    tooltip.style.opacity = '0';
+    tooltip.style.transform = 'translateY(-5px)';
   });
 })();
 
@@ -925,5 +1053,93 @@
   // 5. FOOTER AUTO-YEAR
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+})();
+
+/* ── RECOMMENDATIONS SYSTEM ────────────────────────────────── */
+(function () {
+  const form = document.getElementById('recommendation-form');
+  const grid = document.getElementById('recs-grid');
+  const modal = document.getElementById('recModal');
+  const closeBtn = document.getElementById('rec-modal-close');
+  const closeBtnBtn = document.getElementById('rec-modal-close-btn');
+
+  if (!form || !grid || !modal) return;
+
+  function openModal() {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (closeBtnBtn) closeBtnBtn.addEventListener('click', closeModal);
+  
+  modal.addEventListener('click', e => {
+    if (e.target === modal) closeModal();
+  });
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const nameVal = document.getElementById('rec-name').value.trim();
+    const roleVal = document.getElementById('rec-role').value.trim() || 'Professional Endorser';
+    const textVal = document.getElementById('rec-text').value.trim();
+
+    if (!nameVal || !textVal) return;
+
+    // Create a new recommendation card
+    const card = document.createElement('div');
+    card.className = 'rec-card reveal visible';
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+
+    // Cycle through matching avatars
+    const avatars = ['fa-user-tie', 'fa-user-check', 'fa-user-astronaut', 'fa-user-gear'];
+    const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)];
+
+    card.innerHTML = `
+      <div class="rec-card__quote"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
+      <p class="rec-card__text">${escapeHTML(textVal)}</p>
+      <div class="rec-card__author">
+          <div class="rec-card__avatar"><i class="fas ${randomAvatar}" aria-hidden="true"></i></div>
+          <div class="rec-card__meta">
+              <span class="rec-card__name">${escapeHTML(nameVal)}</span>
+              <span class="rec-card__role">${escapeHTML(roleVal)}</span>
+          </div>
+      </div>
+    `;
+
+    // Append to grid
+    grid.appendChild(card);
+
+    // Trigger transition
+    requestAnimationFrame(() => {
+      card.style.opacity = '1';
+      card.style.transform = 'translateY(0)';
+    });
+
+    // Reset form
+    form.reset();
+
+    // Open confirmation modal
+    openModal();
+  });
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+    );
+  }
 })();
 
