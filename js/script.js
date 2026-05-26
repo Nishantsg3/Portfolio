@@ -322,11 +322,14 @@
 (function () {
   const certData = {
     Intro2SDE: 'assets/certificates/Intro2SDE.jpg',
-    JavaAppDev: 'assets/certificates/SQL.jpg',
+    JavaAppDev: 'assets/certificates/JFIO.jpg',
     Java4begineers: 'assets/certificates/Java4begineers.jpg',
-    OOPJava: 'assets/certificates/Java4begineers.jpg',
+    OOPJava: 'assets/certificates/OOPJ.jpg',
     Python: 'assets/certificates/Python.jpg',
-    GitGitHub: 'assets/certificates/TCSYP.jpg'
+    GitGitHub: 'assets/certificates/Intro2GH.jpg',
+    Intro2HTMLCSSJS: 'assets/certificates/Intro2HTMLCSSJS.jpg',
+    SQL: 'assets/certificates/SQL.jpg',
+    TCSYP: 'assets/certificates/TCSYP.jpg'
   };
 
   const modal = document.getElementById('certModal');
@@ -1053,93 +1056,5 @@ function triggerMatrixRainGlobal() {
   // 5. FOOTER AUTO-YEAR
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-})();
-
-/* ── RECOMMENDATIONS SYSTEM ────────────────────────────────── */
-(function () {
-  const form = document.getElementById('recommendation-form');
-  const grid = document.getElementById('recs-grid');
-  const modal = document.getElementById('recModal');
-  const closeBtn = document.getElementById('rec-modal-close');
-  const closeBtnBtn = document.getElementById('rec-modal-close-btn');
-
-  if (!form || !grid || !modal) return;
-
-  function openModal() {
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  if (closeBtn) closeBtn.addEventListener('click', closeModal);
-  if (closeBtnBtn) closeBtnBtn.addEventListener('click', closeModal);
-  
-  modal.addEventListener('click', e => {
-    if (e.target === modal) closeModal();
-  });
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    const nameVal = document.getElementById('rec-name').value.trim();
-    const roleVal = document.getElementById('rec-role').value.trim() || 'Professional Endorser';
-    const textVal = document.getElementById('rec-text').value.trim();
-
-    if (!nameVal || !textVal) return;
-
-    // Create a new recommendation card
-    const card = document.createElement('div');
-    card.className = 'rec-card reveal visible';
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-
-    // Cycle through matching avatars
-    const avatars = ['fa-user-tie', 'fa-user-check', 'fa-user-astronaut', 'fa-user-gear'];
-    const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)];
-
-    card.innerHTML = `
-      <div class="rec-card__quote"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
-      <p class="rec-card__text">${escapeHTML(textVal)}</p>
-      <div class="rec-card__author">
-          <div class="rec-card__avatar"><i class="fas ${randomAvatar}" aria-hidden="true"></i></div>
-          <div class="rec-card__meta">
-              <span class="rec-card__name">${escapeHTML(nameVal)}</span>
-              <span class="rec-card__role">${escapeHTML(roleVal)}</span>
-          </div>
-      </div>
-    `;
-
-    // Append to grid
-    grid.appendChild(card);
-
-    // Trigger transition
-    requestAnimationFrame(() => {
-      card.style.opacity = '1';
-      card.style.transform = 'translateY(0)';
-    });
-
-    // Reset form
-    form.reset();
-
-    // Open confirmation modal
-    openModal();
-  });
-
-  function escapeHTML(str) {
-    return str.replace(/[&<>'"]/g, 
-      tag => ({
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        "'": '&#39;',
-        '"': '&quot;'
-      }[tag] || tag)
-    );
-  }
 })();
 

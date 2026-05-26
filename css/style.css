@@ -434,8 +434,9 @@ button {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.04);
+  color: var(--accent);
+  background: rgba(255, 255, 255, 0.05);
+  text-decoration: underline;
 }
 
 .nav-links a:hover::after,
@@ -991,37 +992,48 @@ body.bankai-shake {
   border: 1px solid var(--border);
   padding: 0.2rem 0.55rem;
   border-radius: 20px;
-  animation: chipFloat 6s ease-in-out infinite;
+  animation: chipTidalWave 5s ease-in-out infinite;
 }
 
 .hero__chip:nth-child(2) {
-  animation-delay: 0.8s;
+  animation-delay: 0.35s;
 }
 
 .hero__chip:nth-child(3) {
-  animation-delay: 1.6s;
+  animation-delay: 0.7s;
 }
 
 .hero__chip:nth-child(4) {
-  animation-delay: 2.4s;
+  animation-delay: 1.05s;
 }
 
 .hero__chip:nth-child(5) {
-  animation-delay: 3.2s;
+  animation-delay: 1.4s;
 }
 
-@keyframes chipFloat {
-  0%,
-  100% {
-    transform: translateY(0);
+@keyframes chipTidalWave {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
     border-color: var(--border);
     background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 0 0 rgba(122, 30, 43, 0);
   }
-
+  25% {
+    transform: translateY(-4px) rotate(1.5deg);
+    border-color: rgba(122, 30, 43, 0.25);
+    background: rgba(122, 30, 43, 0.05);
+    box-shadow: 0 4px 12px rgba(122, 30, 43, 0.04);
+  }
   50% {
-    transform: translateY(-4px);
-    border-color: rgba(122, 30, 43, 0.22);
-    background: rgba(122, 30, 43, 0.04);
+    transform: translateY(0) rotate(0deg);
+    border-color: var(--border);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 0 0 rgba(122, 30, 43, 0);
+  }
+  75% {
+    transform: translateY(3px) rotate(-1.5deg);
+    border-color: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.015);
   }
 }
 
@@ -1058,7 +1070,7 @@ body.bankai-shake {
   background: var(--accent);
   border-radius: 1px;
   transform: translateX(-50%);
-  animation: scrollHint 2.5s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  animation: scrollHint 1.6s cubic-bezier(0.25, 1, 0.5, 1) infinite;
 }
 
 /* Touch indicator (mobile) — hidden by default */
@@ -1087,19 +1099,28 @@ body.bankai-shake {
 
 @keyframes scrollHint {
   0% {
-    top: 5px;
+    top: 4px;
+    height: 1px;
     opacity: 0;
+    transform: translateX(-50%) scaleY(0.4);
   }
-
-  30% {
+  15% {
     top: 5px;
+    height: 8px;
     opacity: 1;
+    transform: translateX(-50%) scaleY(1.2);
   }
-
-  80%,
-  100% {
-    top: 16px;
+  45% {
+    top: 13px;
+    height: 8px;
+    opacity: 1;
+    transform: translateX(-50%) scaleY(1);
+  }
+  75%, 100% {
+    top: 18px;
+    height: 1px;
     opacity: 0;
+    transform: translateX(-50%) scaleY(0.3);
   }
 }
 

@@ -76,7 +76,6 @@
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
                 <a href="#certifications">Certifications</a>
-                <a href="#recommendations">Recommendations</a>
                 <a href="#contact">Contact</a>
             </div>
             <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -649,6 +648,36 @@
                     <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
                 </div>
 
+                <div class="cert" data-cert="Intro2HTMLCSSJS" data-cert-title="Introduction to HTML5, CSS3, and JavaScript"
+                    data-cert-issuer="IBM — Coursera" role="button" tabindex="0">
+                    <div class="cert__icon"><i class="fab fa-html5" aria-hidden="true"></i></div>
+                    <div class="cert__info">
+                        <div class="cert__title">Introduction to HTML5, CSS3 &amp; JS</div>
+                        <div class="cert__issuer">IBM — Coursera</div>
+                    </div>
+                    <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+
+                <div class="cert" data-cert="SQL" data-cert-title="Databases and SQL for Data Science with Python"
+                    data-cert-issuer="IBM — Coursera" role="button" tabindex="0">
+                    <div class="cert__icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+                    <div class="cert__info">
+                        <div class="cert__title">Databases and SQL for Data Science</div>
+                        <div class="cert__issuer">IBM — Coursera</div>
+                    </div>
+                    <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+
+                <div class="cert" data-cert="TCSYP" data-cert-title="TCS iON Career Edge - Young Professional"
+                    data-cert-issuer="TCS iON" role="button" tabindex="0">
+                    <div class="cert__icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                    <div class="cert__info">
+                        <div class="cert__title">Career Edge - Young Professional</div>
+                        <div class="cert__issuer">TCS iON</div>
+                    </div>
+                    <div class="cert__arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -678,104 +707,6 @@
     </div>
 
     <div class="arc-divider arc-divider--l" aria-hidden="true"></div>
-
-    <!-- ═══════════ RECOMMENDATIONS ═════════════════════════ -->
-    <section id="recommendations" class="sec sec--dark" data-section-label="PEER FEEDBACK">
-        <div class="sec__inner">
-            <div class="sec__head reveal">
-                <span class="sec__arc">Collaboration Arc</span>
-                <h2 class="sec__title">PEER FEEDBACK</h2>
-                <p class="sec__desc" style="opacity: 0.4; font-size: 0.72rem; font-family: var(--mono); margin-top: 0.5rem;">Demo feedback entries for portfolio showcase.</p>
-            </div>
-
-            <!-- Pre-written recommendations cards -->
-            <div class="recs-grid reveal" id="recs-grid">
-                <div class="rec-card">
-                    <div class="rec-card__quote"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
-                    <p class="rec-card__text">Nishant demonstrates strong capabilities in modern Java and Spring Boot architecture. His focus on structural design, API development, and performant backends stands out in project collaborations.</p>
-                    <div class="rec-card__author">
-                        <div class="rec-card__avatar"><i class="fas fa-user-gear" aria-hidden="true"></i></div>
-                        <div class="rec-card__meta">
-                            <span class="rec-card__name">Peer Developer</span>
-                            <span class="rec-card__role">Collaborator | Coursera Full-Stack Path</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rec-card">
-                    <div class="rec-card__quote"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
-                    <p class="rec-card__text">Collaborating with Nishant on LearnIQ showed his clean execution in React, responsive CSS grid layouts, and structured state integration. Delivered modern frontend interfaces reliably.</p>
-                    <div class="rec-card__author">
-                        <div class="rec-card__avatar"><i class="fas fa-user-check" aria-hidden="true"></i></div>
-                        <div class="rec-card__meta">
-                            <span class="rec-card__name">Frontend Collaborator</span>
-                            <span class="rec-card__role">Peer Assessor | EdTech Capstone</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rec-card">
-                    <div class="rec-card__quote"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
-                    <p class="rec-card__text">Nishant is skilled in bridging front-to-back connectivity. His handling of secure REST APIs, Spring Security authentication protocols, and database schemas is highly methodical and robust.</p>
-                    <div class="rec-card__author">
-                        <div class="rec-card__avatar"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
-                        <div class="rec-card__meta">
-                            <span class="rec-card__name">Full-Stack Peer Reviewer</span>
-                            <span class="rec-card__role">Code Reviewer | Backend Security</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lightweight Feedback Widget -->
-            <div class="rec-form-wrap reveal">
-                <h3 class="rec-form__title"><i class="far fa-comments" style="color: var(--accent); margin-right: 8px;"></i>Share Collaboration Feedback</h3>
-                <p class="rec-form__sub">Submit peer developer reviews or capstone project collaborator notes.</p>
-                
-                <form id="recommendation-form" class="form form--widget">
-                    <div class="form__row">
-                        <div class="form__field">
-                            <label for="rec-name">Name</label>
-                            <input type="text" id="rec-name" name="name" placeholder="e.g., Peer Reviewer" required autocomplete="name">
-                        </div>
-                        <div class="form__field">
-                            <label for="rec-role">Title / Organization (Optional)</label>
-                            <input type="text" id="rec-role" name="role" placeholder="e.g., Collaborator | Capstone Project" autocomplete="organization-title">
-                        </div>
-                    </div>
-                    <div class="form__field">
-                        <label for="rec-text">Collaboration Feedback</label>
-                        <textarea id="rec-text" name="text" placeholder="Write feedback, review notes, or peer developer recommendations..." rows="3" required></textarea>
-                    </div>
-                    <div class="form__submit">
-                        <button type="submit" class="btn btn--fill btn--rounded">
-                            Submit Feedback <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Custom success confirmation modal -->
-    <div id="recModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-rec-title">
-        <div class="modal__box modal__box--small">
-            <div class="modal__header">
-                <div class="modal__header-info">
-                    <h3 class="modal__title" id="modal-rec-title"><i class="fas fa-circle-check" style="color: #3a9e5f; margin-right: 8px;"></i> Success</h3>
-                </div>
-                <button class="modal__close" id="rec-modal-close" aria-label="Close">&times;</button>
-            </div>
-            <div class="modal__body" style="padding: 1.5rem; text-align: center;">
-                <p style="color: var(--text); font-size: 0.95rem; margin-bottom: 1.5rem;">Thank you for sharing your professional feedback!</p>
-                <button class="btn btn--fill" id="rec-modal-close-btn" style="min-width: 100px; justify-content: center; margin: 0 auto;">
-                    Done
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="arc-divider arc-divider--r" aria-hidden="true"></div>
 
     <!-- ═══════════ CONTACT ═══════════════════════════════== -->
     <section id="contact" class="sec" data-section-label="CONTACT">

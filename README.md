@@ -5,7 +5,7 @@
 <h1 align="center">&lt;NG/&gt;</h1>
 
 <p align="center">
-  Personal portfolio of <strong>Nishant Gawande</strong> — Full-Stack Java Developer<br/>
+  Personal portfolio of <strong>Nishant Gawande</strong> — Full-Stack Developer & Software Engineer<br/>
   Built with vanilla HTML, CSS, and JavaScript. Zero frameworks, zero dependencies, zero compromise.
 </p>
 
@@ -27,36 +27,60 @@
 
 ## Overview
 
-A fully handcrafted single-page portfolio — dark theme, crimson accents, glassmorphism UI — built without any frontend framework. Features 34 JavaScript modules covering everything from IntersectionObserver-driven scroll reveals to a 3D card tilt engine, Konami Code easter eggs, and a working contact form. Scored for performance with `content-visibility: auto`, lazy loading, and `prefers-reduced-motion` support baked in.
+A highly handcrafted, premium single-page portfolio engineered with a sophisticated dark theme, dynamic crimson accents, and a high-end glassmorphic UI. Developed without any monolithic frontend frameworks, it relies on structured vanilla ES6 modules to drive a high-performance experience.
+
+Features an asymmetric **magazine/editorial grid layout** highlighting **LearnIQ** as the flagship centerpiece, **9 professional certificates**, a terminal-style easter egg console overlay, 3D card tilt engines, and highly polished custom micro-interactions.
 
 ---
 
-## Features
+## Flagship Showcases
 
-### Design & UI
-- Dark theme with crimson accent system and glassmorphism card surfaces
-- Anime-inspired SVG icon set, custom cursor follower, magnetic CTAs
-- 3D card tilt on hover, parallax hero section, dynamic `<title>` on tab blur
+### 🚀 CH.01 — LearnIQ (Featured Flagship)
+A premium full-stack educational assessment platform designed to deliver secure, role-based real-time testing:
+* **Frontend**: React 18, Vite, and responsive HSL Tailwind CSS.
+* **Backend**: Java 17, Spring Boot 3, Spring Security, JWT Authentication, and PostgreSQL database.
+* **Featured Layout**: Sleek centerpiece presentation with a left-edge crimson accent line and dual live/GitHub triggers.
 
-### Animation Engine
-- Preloader sequence, typewriter effect, animated stat counters
-- Scroll-reveal via `IntersectionObserver` — no ScrollMagic, no GSAP
-- Barrel roll, Matrix rain, screen shake — all CSS-triggered via JS class injection
+### 🌐 CH.02 — Engiplex Solutions (Secondary Featured)
+An interactive business-to-business platform showcasing elegant asynchronous grids, dynamic CSS card matrices, and a right-edge crimson asymmetric border glow.
+
+---
+
+## Handcrafted Animations & UI
+
+### 🌊 Sinusoidal Staggered "Tide Wave"
+The hero section tech chips (`Java`, `Spring Boot`, `React`, `MySQL`, `Linux`) rise and fall in a beautifully coordinated physical tide wave. Driven by tightly staggered `0.35s` animation delays and dynamic keyframes that translate coordinates vertically while gently rotating the chips (`1.5deg` to `-1.5deg`).
+
+### 🖱️ 3D "Rolling Wheel" Mouse Scroll
+The desktop mouse scroll indicator features a lively, snappy red wheel line. It dynamically animates both its top position and capsule height (`scaleY`) concurrently, simulating a physical rotating wheel with scroll inertia and snappy easement (`cubic-bezier(0.25, 1, 0.5, 1)`).
+
+---
+
+## Professional Certifications (9 Visible Credentials)
+Features a fully interactive, lightweight modal system showcasing 9 industry credentials with zero page bloat:
+1. **Introduction to Software Engineering** (IBM — Coursera)
+2. **Java App Development Project: Fundamentals, OOP & File I/O** (SkillUp)
+3. **Java Programming for Beginners** (IBM — Coursera)
+4. **Object Oriented Programming in Java** (IBM — Coursera)
+5. **Python for Data Science, AI & Development** (IBM — Coursera)
+6. **Getting Started with Git and GitHub** (IBM — Coursera)
+7. **Introduction to HTML5, CSS3, and JavaScript** (IBM — Coursera)
+8. **Databases and SQL for Data Science with Python** (IBM — Coursera)
+9. **TCS iON Career Edge - Young Professional** (TCS iON)
+
+---
+
+## Features Checklist
+
+### Performance & Security
+- `content-visibility: auto` on off-screen components for rapid initial layouts
+- Lazy loading assets with preconnect DNS hints for third-party resources
+- Netlify secure `_headers` mapping secure CSP rules and cache-control policies
+- Full Open Graph + Twitter Card semantic SEO tags, complete `sitemap.xml`, and `robots.txt`
 
 ### Responsiveness & Accessibility
-- 4 breakpoints: 1024 / 768 / 480 / 360px
-- Touch-optimized, swipe scroll indicator on mobile
-- ARIA labels, semantic HTML5, `prefers-reduced-motion` respected throughout
-
-### Performance & SEO
-- `content-visibility: auto` on off-screen sections
-- Lazy-loaded images, preconnect hints for Google Fonts
-- Full Open Graph + Twitter Card metadata, `sitemap.xml`, `robots.txt`
-
-### Contact & PWA
-- Functional contact form via Formspree, email copy-to-clipboard
-- `manifest.json` for PWA-lite installability
-- Netlify `_headers` for security + caching, `_redirects` for SPA fallback
+- Touch-optimised swiping gesture recognition on mobile displays
+- Precise ARIA accessibility tags, strict semantic HTML hierarchy, and immediate responsive scaling matching all screen boundaries (1024px / 768px / 480px / 360px)
 
 ---
 
@@ -66,58 +90,16 @@ Hold `?` anywhere on the page to reveal the full cheat sheet, or explore:
 
 | Trigger | Effect |
 |:--------|:-------|
-| `↑↑↓↓←→←→BA` | Konami Code flash |
-| Triple-click `<NG/>` logo | Matrix rain |
-| Type `1337` | Leet hacker flash |
+| `↑↑↓↓←→←→BA` | Konami Code terminal overlay |
+| Triple-click `<NG/>` logo | Matrix glyph rain |
+| Type `1337` | Leet hacker terminal overlay |
 | Hover logo for 2s | Logo glitch |
 | Type `bankai` | Anime screen shake |
 | Type `roll` | Barrel roll |
 | 5× click the year | Time warp scramble |
 | Type `blue` / `gold` / `green` | Live theme swap |
 | Triple-click "Solid." | 🧱 |
-| Open DevTools | Console greeting |
-
-11 total. You probably won't find them all without the cheat sheet.
-
----
-
-## Project Structure
-
-```
-Portfolio/
-├── index.html                      
-├── css/
-│   └── style.css                  
-├── js/
-│   └── script.js                  
-├── img/
-│   ├── bg.jpg                      
-│   ├── favicon.png                 
-│   └── og-preview.png              
-├── assets/
-│   └── certificates/               
-├── Nishant_Gawande_9421751107.pdf  
-├── manifest.json                  
-├── robots.txt
-├── sitemap.xml
-├── _headers                      
-├── _redirects                     
-└── .gitignore
-```
-
----
-
-## Tech Stack
-
-| Layer | Tech |
-|:------|:-----|
-| Markup | HTML5 — semantic, ARIA-labeled, SEO meta |
-| Styling | CSS3 — custom properties, BEM, glassmorphism, 4 breakpoints |
-| Logic | JavaScript ES6+ — IIFEs, IntersectionObserver, Web APIs, strict mode |
-| Icons | Font Awesome 6 |
-| Fonts | JetBrains Mono, DM Serif Display, Outfit (Google Fonts) |
-| Forms | Formspree |
-| Hosting | Netlify (custom headers + redirects) |
+| Open DevTools | Custom greeting log |
 
 ---
 
@@ -137,17 +119,6 @@ npx serve .
 ```
 
 No build step. No `npm install`. It just works.
-
----
-
-## Browser Support
-
-| Browser | Status |
-|:--------|:-------|
-| Chrome / Edge | ✅ Full support |
-| Firefox | ✅ Full support |
-| Safari | ✅ Full support |
-| iOS / Android | ✅ Touch-optimized |
 
 ---
 
